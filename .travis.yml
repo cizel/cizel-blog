@@ -13,7 +13,7 @@ deploy:
         branch: master
     local_dir: public
     repo: cizel/cizel.github.io
-    fqdn: blog.cizel.cn 
+    fqdn: cizel.github.io 
     target_branch: master
     email: i.cizel.cn
     name: cizel
