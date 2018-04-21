@@ -4,10 +4,9 @@ language: generic
 install: 
     - wget https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.tar.gz
     - tar -zxvf hugo_0.39_Linux-64bit.tar.gz
-    - mv ./hugo /bin/hugo
-    - chmod +x /bin/hugo
+    - chmod +x hugo
 script:
-    - hugo
+    - ./hugo
 deploy:
     local_dir: public
     repo: cizel/cizel.github.io
