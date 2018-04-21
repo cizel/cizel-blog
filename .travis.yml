@@ -6,7 +6,7 @@ install:
     - tar -zxvf hugo_0.39_Linux-64bit.tar.gz
     - chmod +x hugo
 script:
-    - ./hugo
+    - ./hugo -t casper
 deploy:
     local_dir: public
     repo: cizel/cizel.github.io
