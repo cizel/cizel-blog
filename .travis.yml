@@ -15,7 +15,7 @@ deploy:
     provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
-    email: i.cizel.cn
+    email: i@cizel.cn
     name: cizel
     on:
         branch: master
