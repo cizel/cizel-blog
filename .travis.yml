@@ -1,14 +1,10 @@
 sudo: false
 dist: trusty
-language: go
-env:
-    - ARCH=arm
-go:
-    - master
+language: generic
 install: 
     - wget https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.tar.gz
     - tar -zxvf hugo_0.39_Linux-64bit.tar.gz
-    - mv /hugo_0.39_Linux-64bit/hugo /bin/hugo
+    - mv ./hugo_0.39_Linux-64bit/hugo /bin/hugo
     - chmod +x /bin/hugo
 script:
     - hugo
