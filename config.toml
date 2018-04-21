@@ -5,33 +5,19 @@ copyright = "All rights reserved @ 2018"
 disqusshortname = "cizel"
 paginate = 5
 pluralizelisttitles = false
-theme = "hugo-theme-casper"
-
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/"
-weight = -120
-[[menu.main]]
-name = "Github repos"
-pre = "<h3>Follow me</h3>"
-url = "https://github.com/cizel"
-weight = 100
+theme = "casper"
 
 [params]
 author = "cizel"
 authorlocation = "Beijin"
+authoravatar = "http://static.cizel.cn/2018-04-21-a.jpg"
 authorwebsite = "http://www.cizel.cn"
 authorbio = "IT software and Security Engineer, Open source enthusiast."
 cover = "http://static.cizel.cn/2018-04-21-macpro.jpg"
-description = "Cizel's Blog"
+description = "如何成为一个很厉害的人"
 githubName = "cizel"
-googleAnalyticsUserID = "UA-79101-12"
-hideHUGOSupport = false
+hideHUGOSupport = true
 logo = "http://static.cizel.cn/2018-04-21-ghost.png"
-twitterName = "vjeantet"
-[permalinks]
-post = "/:slug/"
 [sitemap]
 ChangeFreq = ""
 Filename = "sitemap.xml"
