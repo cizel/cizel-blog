@@ -10,14 +10,14 @@ theme = "casper"
 [params]
 author = "cizel"
 authorlocation = "Beijin"
-authoravatar = "http://static.cizel.cn/2018-04-21-a.jpg"
+authoravatar = "https://static.cizel.cn/2018-04-21-a.jpg"
 authorwebsite = "http://www.cizel.cn"
 authorbio = "IT software and Security Engineer, Open source enthusiast."
-cover = "http://static.cizel.cn/2018-04-21-macpro.jpg"
+cover = "https://static.cizel.cn/2018-04-21-macpro.jpg"
 description = "如何成为一个很厉害的人"
 githubName = "cizel"
 hideHUGOSupport = true
-logo = "http://static.cizel.cn/2018-04-21-ghost.png"
+logo = "https://static.cizel.cn/2018-04-21-ghost.png"
 [sitemap]
 ChangeFreq = ""
 Filename = "sitemap.xml"
