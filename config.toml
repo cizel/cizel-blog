@@ -6,7 +6,6 @@ disqusshortname = "cizel"
 paginate = 5
 pluralizelisttitles = false
 theme = "casper"
-
 [params]
 author = "cizel"
 authorlocation = "Beijin"
@@ -18,6 +17,8 @@ description = "如何成为一个很厉害的人"
 githubName = "cizel"
 hideHUGOSupport = true
 logo = "https://static.cizel.cn/2018-04-21-ghost.png"
+cdnURL = "https://cdn.cizel.cn" 
+
 [sitemap]
 ChangeFreq = ""
 Filename = "sitemap.xml"
