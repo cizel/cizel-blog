@@ -1,6 +1,6 @@
 ---
 title: "Cizel的博客系统更换为 Hugo, 托管 Github"
-date = 2018-05-02T07:54:46+08:00
+date: 2018-05-02T07:54:46+08:00
 ---
 
 Cizel Blog 经历了多次迁移, 当前版本为 Hugo
