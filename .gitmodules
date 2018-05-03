@@ -1,6 +1,3 @@
-[submodule "themes/casper"]
-	path = themes/casper
-	url = https://github.com/cizel/hugo-theme-casper
 [submodule "public"]
 	path = public
 	url = git@github.com:cizel/cizel.github.io.git
