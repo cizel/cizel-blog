@@ -10,7 +10,7 @@ script:
 deploy:
     local_dir: public
     repo: cizel/cizel.github.io
-    fqdn: blog.cizel.cn
+    fqdn: cizel.me
     target_branch: master
     provider: pages
     skip_cleanup: true
