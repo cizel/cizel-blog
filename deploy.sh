@@ -1,2 +1,3 @@
 git submodule update --init --recursive
-hugo -t casper -s /home/work/data/www/www.cizel.cn/
+hugo -t casper
+rsync -avz ./public /home/work/data/www/www.cizel.cn/
