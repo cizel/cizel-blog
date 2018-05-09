@@ -2,6 +2,7 @@
 title: "PHP实现手机归属地查询"
 date: 2016-04-11T17:48:39+08:00
 draft: false
+categories: ["PHP"]
 ---
 
 > 通过在慕课网上面的学习，完成了 PHP 实现手机归属地查询的功能。
