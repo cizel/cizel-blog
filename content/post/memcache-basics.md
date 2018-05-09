@@ -1,6 +1,6 @@
 ---
 title: "Memcache 基础使用方法"
-date: 2016-08-19    T00:15:03+08:00
+date: 2016-08-19T00:15:03+08:00
 lastmod: 2018-05-10T00:15:03+08:00
 draft: false
 keywords: ["Memcache"]
