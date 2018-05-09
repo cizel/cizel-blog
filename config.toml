@@ -104,7 +104,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
     gitmentJS = '<script src="https://cdn.cizel.cn/dist/js/gitment.browser.min.js"></script>'
     gitmentCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/default.min.css">'
     gitalkJS = '<script src="https://cdn.cizel.cn/dist/js/gitalk.min.js">'
-    gitalkCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/gitalk.css">'
+    gitalkCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/gitalk.css"><link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/font-awesome.min.css">'
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = "cizel"              # Your GitHub ID
