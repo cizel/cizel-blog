@@ -100,11 +100,11 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
     jquery = '<script src="https://cdn.cizel.cn/dist/js/jquery.min.js"></script>'
     slideout = '<script src="https://cdn.cizel.cn/dist/js/slideout.min.js"></script>'
     fancyboxJs = '<script src="https://cdn.cizel.cn/dist/js/jquery.fancybox.min.js"></script>'
-    fancyboxCss = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/jquery.fancybox.min.css">'
+    fancyboxCss = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/font-awesome.min.css">'
     gitmentJS = '<script src="https://cdn.cizel.cn/dist/js/gitment.browser.min.js"></script>'
     gitmentCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/default.min.css">'
     gitalkJS = '<script src="https://cdn.cizel.cn/dist/js/gitalk.min.js">'
-    gitalkCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/gitalk.css"><link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/font-awesome.min.css">'
+    gitalkCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/gitalk.css">'
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = "cizel"              # Your GitHub ID
