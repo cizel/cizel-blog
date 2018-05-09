@@ -1,7 +1,7 @@
 baseURL = "http://localhost:1313/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "Even - A super concise theme for Hugo"
+title = "Cizel's Blog"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
@@ -22,25 +22,26 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "home"
+  name = "首页"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "archives"
+  name = "归档"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
-  name = "categories"
+  name = "分类"
   weight = 40
   identifier = "categories"
   url = "/categories/"
+
+[[menu.main]]
+  name = "关于"
+  weight = 50
+  identifier = "about"
+  url = "/about/"
 
 [params]
   version = "3.x"           # Used to give a friendly message when you have an incompatible update
@@ -49,12 +50,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   since = "2016"            # Site creation time          # 站点建立时间
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Hugo", "theme","even"]
-  description = "Hugo theme even example site."
+  logoTitle = "Cizel"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["Blog", "Cizel的博客", "Cizel", "PHP", "Go"]
+  description = "爱编程，爱安全，爱生活 - Cizel.cn"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 5
+  archivePaginate = 10
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
@@ -121,8 +122,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.busuanzi]         # count web traffic by busuanzi                             # 是否使用不蒜子统计站点访问量
     enable = true
-    siteUV = true
-    sitePV = true
+    siteUV = false
+    sitePV = false
     pagePV = true
 
   [params.reward]                                         # 文章打赏
@@ -131,13 +132,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://localhost:1313"
-    f-google = "http://localhost:1313"
     g-github = "http://localhost:1313"
-    h-weibo = "http://localhost:1313"
-    i-zhihu = "http://localhost:1313"
-    j-douban = "http://localhost:1313"
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
