@@ -4,7 +4,6 @@ defaultContentLanguage = "zh-cn"
 title = "Cizel's Blog"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "even"
 
 preserveTaxonomyNames = true
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
@@ -33,15 +32,22 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
   url = "/post/"
 [[menu.main]]
   name = "分类"
-  weight = 40
+  weight = 30
   identifier = "categories"
   url = "/categories/"
+
+[[menu.main]]
+  name = "友链"
+  weight = 40
+  identifier = "links"
+  url = "/links/"
 
 [[menu.main]]
   name = "关于"
   weight = 50
   identifier = "about"
   url = "/about/"
+
 
 [params]
   version = "3.x"           # Used to give a friendly message when you have an incompatible update

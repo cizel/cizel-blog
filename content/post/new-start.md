@@ -1,9 +1,13 @@
 ---
 title: "Cizel的博客系统更换为 Hugo, 托管 Github"
 date: 2018-05-02T07:54:46+08:00
+keywords: ["Hugo"]
+tags: []
+categories: ["观点与感想"]
+draft: false
 ---
 
-Cizel Blog 经历了多次迁移, 当前版本为 Hugo
+Cizel's Blog 经历了多次迁移, 当前版本为 Hugo
 
 <!--more-->
 
