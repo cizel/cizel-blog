@@ -22,22 +22,22 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "主页"
+  name = "home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "归档"
+  name = "archives"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "标签"
+  name = "tags"
   weight = 30
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "分类"
+  name = "categories"
   weight = 40
   identifier = "categories"
   url = "/categories/"
@@ -100,10 +100,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     gitalkCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.2.2/dist/gitalk.css" integrity="sha256-rJVe5uyYRXdLM+Kkoj7JtN+9qI0bZTxkYTaNWODpg7U=" crossorigin="anonymous">'
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
+    owner = "cizel"              # Your GitHub ID
+    repo = "https://github.com/cizel/blog-comment"               # The repo to store comments
+    clientId = "33532f4ec0b513251b74"           # Your client ID
+    clientSecret = "c32af5d88d01e52d5b0543336c1a877e1ecbe179"       # Your client secret
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = ""              # Your GitHub ID
@@ -133,17 +133,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
     b-stack-overflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
-    d-facebook = "http://localhost:1313"
-    e-linkedin = "http://localhost:1313"
     f-google = "http://localhost:1313"
     g-github = "http://localhost:1313"
     h-weibo = "http://localhost:1313"
     i-zhihu = "http://localhost:1313"
     j-douban = "http://localhost:1313"
-    k-pocket = "http://localhost:1313"
-    l-tumblr = "http://localhost:1313"
-    m-instagram = "http://localhost:1313"
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
