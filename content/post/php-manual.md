@@ -1,6 +1,6 @@
 ---
 title: "PHP 手册阅读笔记 - 语言参考篇"
-date: 2018-04-21T10:07:44+08:00
+date: 2017-03-04T10:07:44+08:00
 draft: false
 categories: ["PHP"]
 ---
