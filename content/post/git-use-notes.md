@@ -2,7 +2,7 @@
 title: "Git的使用笔记"
 date: 2016-07-10T00:00:38+08:00
 lastmod: 2018-05-10T00:00:38+08:00
-draft: false
+draft: true
 keywords: ["git"]
 categories: ["剪贴板", "观点与感想"]
 ---

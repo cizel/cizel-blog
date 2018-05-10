@@ -1,41 +1,38 @@
 ---
 title: "PHP实现手机归属地查询"
 date: 2016-04-11T17:48:39+08:00
+lastmod: 2018-05-10T00:20:38+08:00
 draft: false
 categories: ["PHP"]
 ---
 
-> 通过在慕课网上面的学习，完成了 PHP 实现手机归属地查询的功能。
+> 最近经常在开慕课网上的课程, 动手完成 PHP 实现手机归属地查询的功能。
 
 <!--more-->
+
 ![](https://static.cizel.cn/2018-05-09-15258698172904.jpg)
 
+## 后台类结构
 
-### 后台
 MobileQuery类调用:
  - \libs\HttpRquest
  - \libs\ImRedis (未使用)
 
 Api类调用 MobileQuery 类的 Query 方法来返回 $response 的数据，并进行加工。
 
-### 前台
+## 前台类结构
 
 base.js 使用 .ajax 请求，并将请求后的数据填充到index.html 中。
 
-### 核心代码展示
+## 核心代码展示
 
-- AutoLoad.php
+### AutoLoad.php
 
 ```php
 <?php
-/**
- * TODO Auto-generated comment.
- */
+
 class AutoLoad {
 
-	/**
-	 * TODO Auto-generated comment.
-	 */
 	 public static function load($className)
     {
         //命名空间的反斜杠替代
@@ -46,13 +43,12 @@ class AutoLoad {
 spl_autoload_register(['AutoLoad','load']);
 
 ```
-- Api.php
+
+### Api.php
 
 ```php
 <?php
-/**
- * TODO Auto-generated comment.
- */
+
 require_once "AutoLoad.php";
 use \app\MobileQuery;
 class Api{
@@ -87,7 +83,8 @@ $Api = new Api();
 echo $Api->getResponse();
 
 ```
-- app/MobileQuery.php
+
+### app/MobileQuery.php
 
 ```php
 <?php
@@ -144,7 +141,8 @@ class MobileQuery {
 }
 
 ```
-- lib/HttpRequest.php
+
+# lib/HttpRequest.php
 
 ```php
 <?php
@@ -181,7 +179,8 @@ class HttpRequest {
 }
 
 ```
-- statis/js/base.js
+
+### statis/js/base.js
 
 ```js
 /*
@@ -240,12 +239,10 @@ Cizel.GLOBAL.AJAX = function(url, method, params,dataType,callBack)
 };
 ```
 
-### 感悟
+## 感悟
+
 通过完成这个实例，感觉自己对 PHP 面向对象的编写有了新的理解，同时 JavaScript 的编写能力需要加强。
 
-### 代码下载
+## 代码地址
+
 [https://github.com/cizel/TryMyBest/tree/master/queryPhone](https://github.com/cizel/TryMyBest/tree/master/queryPhone)
-
-以上
-
-

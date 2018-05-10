@@ -2,7 +2,7 @@
 title: "数学建模笔记总结"
 date: 2016-06-16T23:41:22+08:00
 lastmod: 2016-06-16T23:41:22+08:00
-draft:  false
+draft: true 
 keywords: ["数学建模"]
 tags: []
 categories: ["观点与感悟"]
