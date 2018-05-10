@@ -100,7 +100,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
     jquery = '<script src="https://cdn.cizel.cn/dist/js/jquery.min.js"></script>'
     slideout = '<script src="https://cdn.cizel.cn/dist/js/slideout.min.js"></script>'
     fancyboxJs = '<script src="https://cdn.cizel.cn/dist/js/jquery.fancybox.min.js"></script>'
-    fancyboxCss = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/font-awesome.min.css">'
+    fancyboxCss = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">'
     gitmentJS = '<script src="https://cdn.cizel.cn/dist/js/gitment.browser.min.js"></script>'
     gitmentCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/default.min.css">'
     gitalkJS = '<script src="https://cdn.cizel.cn/dist/js/gitalk.min.js">'
