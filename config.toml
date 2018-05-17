@@ -39,7 +39,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
 [[menu.main]]
   name = "记录"
   weight = 40
-  identifier = "links"
+  identifier = "daily-notes"
   url = "/daily-notes/"
 
 [[menu.main]]
