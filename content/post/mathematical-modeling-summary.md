@@ -2,7 +2,7 @@
 title: "数学建模笔记总结"
 date: 2016-06-16T23:41:22+08:00
 lastmod: 2016-06-16T23:41:22+08:00
-draft: true 
+draft: true
 keywords: ["数学建模"]
 tags: []
 categories: ["观点与感悟"]
@@ -37,7 +37,7 @@ surf(x0, y0, z0);
 ```matlab
 clc,clear %function stepAnalysis 主函数
 %第一步，建立层次结构,常量的定义
- 
+
 %第二步，构造成对比较矩阵
 A=[1,1/2,4,3,3
     2,1,7,5,5
@@ -62,12 +62,12 @@ B{5}=[1 1 1/4
 %第三步，计算准侧层A的最大特征值，归一化的特征向量，CI,RI,CR
 Wi=featureVectorW(A);
 CRn=ConsistencyCR(A);
- 
+
 for i=1:5
     W{i}=featureVectorW(B{i});
     CR{i}=ConsistencyCR(B{i});
 end
- 
+
 Wn=[W{1},W{2},W{3},W{4},W{5}];
 B=Wn*Wi;
 ```
@@ -99,7 +99,7 @@ A=[55 20 25 0 10
     25 10 40 25 15.2
     15 0 55 30 19.5
     45 10 40 5 10.1
-    40 20 40 0 10 
+    40 20 40 0 10
     45 30 25 0 9.01
     ];
 R=maxFormat(A);
@@ -135,7 +135,7 @@ function X=maxFormat(matrix)  %最大值规格化
     for i=1:6
        for j=1:6
            temp=[matrix(i,:);matrix(j,:)];
-           X(i,j)=sum(min(temp))/sum(max(temp));   
+           X(i,j)=sum(min(temp))/sum(max(temp));
        end
     end
 end
@@ -146,9 +146,9 @@ function  X=closure(last)  %闭包测试
     for i=1:6
        for j=1:6
            temp=[last(i,:);last(:,j)'];
-           X(i,j) = max(min(temp));   
+           X(i,j) = max(min(temp));
       end
-    end    
+    end
 end
 ```
 
@@ -162,13 +162,13 @@ p2=[1.14,1.82;1.18,1.96;1.20,1.86;1.26,2.00
 1.28,2.00;1.30,1.96];
 p=[p1;p2]’;
 pr=minmax(p); %input data
-goal=[ones(1,9),zeros(1,6);zeros(1,9),ones(1,6)];%target data 
+goal=[ones(1,9),zeros(1,6);zeros(1,9),ones(1,6)];%target data
 plot(p1(:,1),p1(:,2),'h',p2(:,1),p2(:,2),'o') %点的分布
-%创建神经网络 
-net=newff(pr,[3,2],{'logsig','logsig'}); 
+%创建神经网络
+net=newff(pr,[3,2],{'logsig','logsig'});
 %设置训练参数
-net.trainParam.show = 10; 
-net.trainParam.lr = 0.05; 
+net.trainParam.show = 10;
+net.trainParam.lr = 0.05;
 net.trainParam.goal = 1e-10; %精度
 net.trainParam.epochs = 50000;%最大步长
 %开始训练
@@ -209,10 +209,10 @@ size(A,2); %echo 4
 `unique()`
 
 ```matlab
-A = [1 1 5 6 2 3 3 9 8 6 2 4] 
+A = [1 1 5 6 2 3 3 9 8 6 2 4]
 [b1, m1, n1] = unique(A, 'first');
-%b2 = 1   2   3   4   5   6   8   9 
-%m2 = 2  11   7  12   3  10   9   8 
+%b2 = 1   2   3   4   5   6   8   9
+%m2 = 2  11   7  12   3  10   9   8
 %n2 = 1   1   5   6   2   3   3   8   7   6   2   4
 ```
 

@@ -9,13 +9,13 @@ tags: []
 categories: ["最佳实践"]
 ---
 
-Linux Shell 脚本编程之前一直没有系统的去学习, 在写 Shell 脚本的时候总需要现查各种语法. 本文章以编程语言的维度去系统的学习 Shell 脚本编程.
+Linux Shell 脚本编程之前一直没有系统的去学习，在写 Shell 脚本的时候总需要现查各种语法。本文章以编程语言的维度去系统的学习 Shell 脚本编程。
 
 <!--more-->
 
 ## Shell
 
-Linux Shell 是与 Linux 系统交互的一个应用程序, 我们通过这个程序可以操作 Linux 系统的内核服务.
+Linux Shell 是与 Linux 系统交互的一个应用程序，我们通过这个程序可以操作 Linux 系统的内核服务。
 
 执行 `$cat /etc/shells`, 可以看到系统中现在可用的 Shell 解释器
 
@@ -33,43 +33,43 @@ Linux Shell 是与 Linux 系统交互的一个应用程序, 我们通过这个�
 /usr/local/bin/zsh
 ```
 
-现代的 Linux 系统中 `/bin/sh` 已经被 `/bin/bash`, 作为 Linux 默认的 Shell. 
+现代的 Linux 系统中 `/bin/sh` 已经被 `/bin/bash`, 作为 Linux 默认的 Shell.
 
 输入 `$echo $SHELL` 可以看到当前系统的 Shell.
 
 ## Shell 脚本
 
-Shell 脚本(Shell Script), 是为 Shell 编写的一个脚本程序. 我们说的 Shell 通常指的是 Shell 脚本. 
+Shell 脚本 (Shell Script), 是为 Shell 编写的一个脚本程序。我们说的 Shell 通常指的是 Shell 脚本。
 
 ## Shell 变量
 
-> 可能的坑: 
+> 可能的坑：
 
 > 1. 赋值变量不能有美元符号 (`$`)
-> 2. 赋值语句等号(`=`) 左右都不能有空格
+> 2. 赋值语句等号 (`=`) 左右都不能有空格
 
-Shell 脚本属于弱类型的脚本语言, 在使用的时候不需要提前定义变量类型. 
+Shell 脚本属于弱类型的脚本语言，在使用的时候不需要提前定义变量类型。
 
-直接赋值的方式: 
+直接赋值的方式：
 
 ```bash
 # 正确
 name="cizel"
 
-# 错误, 赋值变量不能有 $ 符号, 等号不能有空格 
+# 错误，赋值变量不能有 $ 符号，等号不能有空格
 $name = "cizel"
 ```
 
-另外一种语句的赋值方式: 
+另外一种语句的赋值方式：
 
 ```bash
 for file in `ls /etc`
 ```
 
-## 未完, 待续
+## 未完，待续
 
-## 相关链接 
+## 相关链接
 
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [linux几种常见的Shell](https://blog.csdn.net/whatday/article/details/78929247)
-- [Shell脚本编程30分钟入门](https://github.com/qinjx/30min_guides/blob/master/shell.md)
+- [linux 几种常见的 Shell](https://blog.csdn.net/whatday/article/details/78929247)
+- [Shell 脚本编程 30 分钟入门](https://github.com/qinjx/30min_guides/blob/master/shell.md)

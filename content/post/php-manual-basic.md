@@ -11,7 +11,7 @@ categories: ["PHP"]
 
 ## 语言参考 > 类型
 
-【新认知】强制转换类型用 `settype( mixed $var, string $type )`。判断变量的类型用`is_type `函数。例如： 
+【新认知】强制转换类型用 `settype( mixed $var, string $type )`。判断变量的类型用`is_type `函数。例如：
 
 ```php
 if (is_int($an_int)) {
@@ -79,7 +79,7 @@ if (abs($a - $b) < $epsilon) {
 }
 ```
 
-### String 字符串 
+### String 字符串
 【新认知】使用函数 `ord()` 和 `chr()` 实现 ASCII 码和字符间的转换（PS:这点和 Python 是一样的）
 【新认知】 PHP 中没有单独的“byte”类型，已经用字符串来代替了。
 
@@ -154,7 +154,7 @@ function test()
 【新认知】变量名中的点和空格被转换成下划线 例如 `<input name="a.b" />` 变成 `$_REQUEST["a_b"]`
 
 ## 语言参考 > 流程控制
-### foreach 
+### foreach
 【新认知】用list()为嵌套数组解包
 
 ```php
@@ -175,7 +175,7 @@ foreach ($array as list($a, $b)) {
 ### break
 【新认知】break 可以接受一个可选的数字参数来决定跳出几重循环。```break```  相当于 ```break 1```
 
-### continue 
+### continue
 【新认知】continue 可以接受一个可选的数字参数来决定跳到几重循环结尾。```continue```  相当于 ```continue 1```
 
 
@@ -184,7 +184,7 @@ foreach ($array as list($a, $b)) {
 ### 魔术常量
 【新认知】原来这些变量叫做 魔法常量
 ```php
-__LINE __ 
+__LINE __
 __FILE__
 __DIR__
 __FUNCTION__
@@ -203,7 +203,7 @@ __NAMESPACE__
 namespace NS {
     class ClassName {
     }
-    
+
     echo ClassName::class;
 }
 ?>
@@ -220,7 +220,7 @@ namespace NS {
 
 ### 类型约束
 
-【新认知】PHP5 可以使用类型约束，函数的参数可以制定必须为 对象，接口，数组，callable 
+【新认知】PHP5 可以使用类型约束，函数的参数可以制定必须为 对象，接口，数组，callable
 
 ### 后期静态绑定
 
@@ -285,7 +285,7 @@ $_REQUEST
 $_SESSION
 $_ENV
 $_COOKIE
-$php_errormsg //前一个错误信息 
+$php_errormsg //前一个错误信息
 $HTTP_RAW_POST_DATA //原始POST数据
 $http_response_header //HTTP Response Header
 $argc //argument numbers

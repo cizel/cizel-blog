@@ -17,6 +17,6 @@ Cizel's Blog 经历了多次迁移, 当前版本为 Hugo
 
 从 GitBlog 转到 Typecho, 简洁，Markdown 支持友好
 
-从 Typecho 转到 Hugo, 拥抱开源享受 Github 提交的乐趣 
+从 Typecho 转到 Hugo, 拥抱开源享受 Github 提交的乐趣
 
 

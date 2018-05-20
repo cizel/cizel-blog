@@ -38,7 +38,7 @@ alert("flag{a2714506-b3e2-417d-bac9-e8d078ed4d96}")
 ### 加密的地址
 
  - 看着有点特殊？
- 
+
 截图：
 
 ![Alt text](http://static.cizel.cn/nextone/2.png)
@@ -177,7 +177,7 @@ output: 32043
 
 输入数字，顺利得到Flag
 
-### 统计 
+### 统计
 
 - 小明的数学作业，你能帮他完成这道题吗？
 
@@ -367,7 +367,7 @@ for i in range(1,256):
 ### 有选择吗？
 
 - 题目：捕获文件中的TCP只包含有HTTP，但是HTTP在TCP中的百分比却只有12.76%，那么余下的百分比是。A.隐藏协议的数据包              B.数据传输和控制的数据包
-C.程序漏洞引起的计算错误    D.没有正确答案  
+C.程序漏洞引起的计算错误    D.没有正确答案
 
 打开16关.pcap文件，
 
@@ -388,13 +388,13 @@ C.程序漏洞引起的计算错误    D.没有正确答案
 
 是几段简单的Post请求，查看内容，是Boss 和 test在聊天 (gbk2312编码)
 工具地址：http://tool.chinaz.com/tools/urlencode.aspx
-	
+
 	Boss：去做个ctf
 	test：要什么题
 	Boss：自己想
 	test：有什么要求吗
 	Boss：flag{你自己看着办}
-	
+
 得到Flag
 
 ### 万中有一
@@ -412,9 +412,9 @@ C.程序漏洞引起的计算错误    D.没有正确答案
 是一个联系网站注入的界面，读取这些post的请求就可以看出，一次一次的注入测试。
 
 	uname=as&passwd=asss&submit=Submit
-	
+
 	uname=as%22%29%20UNION%20ALL%20SELECT%20CONCAT%280x7176766a71%2CIFNULL%28CAST%28DATABASE%28%29%20AS%20CHAR%29%2C0x20%29%2C0x716a626a71%29%2CNULL%23&passwd=asss&submit=Submit
-	
+
 	uname=as%22%29%20UNION%20ALL%20SELECT%20%28SELECT%20CONCAT%280x7176766a71%2CIFNULL%28CAST%28%60user%60%20AS%20CHAR%29%2C0x20%29%2C0x6b736c707066%2CIFNULL%28CAST%28pass%20AS%20CHAR%29%2C0x20%29%2C0x716a626a71%29%20FROM%20Less_6.admin%20LIMIT%200%2C1%29%2CNULL%23&passwd=asss&submit=Submit
 
 最后一次注入成功拿到Flag
@@ -433,7 +433,7 @@ C.程序漏洞引起的计算错误    D.没有正确答案
 	i am here what?
 	i don't have idea
 	i don not have idea
-	。。。
+	......
 	but i was born in tangshan
 	sounds like not bad
 	where is that?
@@ -514,7 +514,7 @@ public class MainActivity
           arrayOfChar1[i] = ((char)(arrayOfChar1[i] - k));
         }
         label175:
-        Toast.makeText(this, "not right! lol。。。。", 1).show();
+        Toast.makeText(this, "not right! lol......", 1).show();
         return;
       }
     }
@@ -752,7 +752,7 @@ root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/sbin/nologin daemon:x:2:2:da
 `PD9waHAgDQovL2ZsYWd7M2I0NTZlMDAtOTU0Yi00MjkwLTkyZWItOTY2ZTM4NzUwNDc3fTs/Pg`
 解密：
 ```
-<?php 
+<?php
 //flag{3b456e00-954b-4290-92eb-966e38750477};?>
 ```
 得到 Flag
@@ -788,7 +788,7 @@ root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/sbin/nologin daemon:x:2:2:da
 
 注入点有很多，使用sqlmap随便跑一个注入点.
 
-可以知道有一个admin的表, 有3个字段 
+可以知道有一个admin的表, 有3个字段
 
 `admin` `id` `passwod`
 
@@ -836,7 +836,7 @@ root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/sbin/nologin daemon:x:2:2:da
 
 
 
-  
+
 
 
 

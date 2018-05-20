@@ -18,7 +18,7 @@ categories: ["剪贴板"]
     var done = false;
     var length = document.getElementById("zhuti").contentWindow.document.getElementById("pjkc").getElementsByTagName("option").length;
     var count = 0;
-    
+
     try{
         var setAll = function(){
             var selects = document.getElementById("zhuti").contentWindow.document.getElementsByClassName("datelist")[0].getElementsByTagName("select");
@@ -29,7 +29,7 @@ categories: ["剪贴板"]
             	}else{
             		selects[i].value="优秀";
             	}
-                
+
             };
         };
         var submitData = function(){
