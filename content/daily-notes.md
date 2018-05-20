@@ -9,9 +9,15 @@ categories: ["观点与感想"]
 
 ## 日常立 Flag
 
-- 写 Shell 的使用文档 (创建时间: 2018-05-18)
+- 写 Shell 脚本编程的使用文档 (创建时间: 2018-05-18, 进度`20%`)
 
 ---
+
+## 2018-05-20
+
+今天写了一部分 Shell 编程的文档, 写了 Shell 变量的一部分. 
+
+重新学习一遍 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines), [中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide), 并在后面的文章中实践规范.
 
 ## 2018-05-19
 
