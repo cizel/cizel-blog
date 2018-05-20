@@ -1,5 +1,5 @@
 ---
-title: "Shell 脚本编程实践"
+title: "Shell 脚本编程实践 20%"
 date: 2018-05-20T12:38:57+08:00
 lastmod: 2018-05-20T12:38:57+08:00
 draft: false
@@ -43,14 +43,22 @@ Shell 脚本(Shell Script), 是为 Shell 编写的一个脚本程序. 我们说�
 
 ## Shell 变量
 
+> 可能的坑: 
+
+> 1. 赋值变量不能有美元符号 (`$`)
+> 2. 赋值语句等号(`=`) 左右都不能有空格
+
 Shell 脚本属于弱类型的脚本语言, 在使用的时候不需要提前定义变量类型. 
 
 直接赋值的方式: 
 
-<font color="green">[正确]</font> name="cizel"
+```bash
+# 正确
+name="cizel"
 
-<font color="red">[错误]</font> $name<kbd>空格</kbd>=<kbd>空格</kbd>"cizel" *赋值变量不能有 $ 符号, 等号不能有空格*
-
+# 错误, 赋值变量不能有 $ 符号, 等号不能有空格 
+$name = "cizel"
+```
 
 另外一种语句的赋值方式: 
 
@@ -65,4 +73,3 @@ for file in `ls /etc`
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [linux几种常见的Shell](https://blog.csdn.net/whatday/article/details/78929247)
 - [Shell脚本编程30分钟入门](https://github.com/qinjx/30min_guides/blob/master/shell.md)
-let g:vim_markdown_no_default_key_mappings = 1
