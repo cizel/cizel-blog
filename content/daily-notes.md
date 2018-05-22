@@ -13,10 +13,13 @@ categories: ["观点与感想"]
 
 ---
 
+## 2018-05-21
+
+GitHub 添加GPG Key (Signing commits using GPG), 避免传输过程中信息被篡改. 提交代码使用:  `git commit -S -m your commit`
 
 ## 2018-05-21
 
-今天工作的时候大部分时间都在写 Shell, 学习使用 `jq` 命令去操作 Json 文件, 学习 `sed` 命令去替换文>件的内容. `sed` 还有很多功能, 后面慢慢的学习.
+今天工作的时候大部分时间都在写 Shell, 学习使用 `jq` 命令去操作 Json 文件，学习 `sed` 命令去替换文》件的内容。`sed` 还有很多功能，后面慢慢的学习。
 
 ## 2018-05-20
 
