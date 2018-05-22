@@ -9,13 +9,15 @@ categories: ["观点与感想"]
 
 ## 日常立 Flag
 
-- 写 Shell 脚本编程的使用文档 （创建时间：2018-05-18, 进度`20%`)
+- 写 Shell 脚本编程的使用文档 （创建时间：2018-05-18, 进度`30%`)
 
 ---
 
-## 2018-05-21
+## 2018-05-22
 
-GitHub 添加GPG Key (Signing commits using GPG), 避免传输过程中信息被篡改. 提交代码使用:  `git commit -S -m your commit`
+GitHub 添加 GPG Key (Signing commits using GPG), 避免传输过程中信息被篡改。提交代码使用：`git commit -S -m your commit`
+
+Shell 脚本编程进度 `20%` -> `30%`.
 
 ## 2018-05-21
 

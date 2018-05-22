@@ -1,5 +1,5 @@
 ---
-title: "Shell 脚本编程实践 20%"
+title: "Shell 脚本编程实践 30%"
 date: 2018-05-20T12:38:57+08:00
 lastmod: 2018-05-20T12:38:57+08:00
 draft: false
@@ -65,6 +65,62 @@ $name = "cizel"
 ```bash
 for file in `ls /etc`
 ```
+##  Shell 使用变量
+
+```bash
+name="cizel"
+
+# 使用美元 ($) 符号
+echo $name
+
+# 使用美元 ($) 符号和括号结合, 常用于字符串拼接
+echo ${name}
+```
+
+## Shell 字符串
+
+Shell 的字符串与 PHP 的字符串相同, 分为 `单引号字符串` 和 `双引号字符串`
+
+### 字符串定义
+
+```bash
+$name="cizel"
+#单引号中变量和符号不会被解析
+echo 'my name is ${name}'
+# output: my name is ${name}
+
+#双引号中变量和符号会被解析
+echo 'my name is ${name}'
+# output: my name is $shizhen
+```
+
+### 字符串连接
+
+```bash
+name="cizel"
+echo $name $name 
+# output:cizel cizel
+```
+
+### 字符串长度
+
+```bash
+name="cizel"
+echo ${#name}
+# output: 5
+```
+
+### 字符串截取
+
+```bash
+name="my name is cizel"
+echo ${name:2:5}
+# output: name 
+```
+
+
+
+
 
 ## 未完，待续
 
