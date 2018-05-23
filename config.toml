@@ -1,13 +1,13 @@
 baseURL = "https://www.cizel.cn/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "Cizel's Blog - Best Practices"
+title = "Cizel's Blog - 想要成为一个很厉害的人"
 enableRobotsTXT = true
 enableEmoji = true
 
 preserveTaxonomyNames = true
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 10                                              # 首页每页显示的文章数
+paginate = 6                                              # 首页每页显示的文章数
 disqusShortname = "cizel"      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: author.name ↓        # 默认为下面配置的author.name ↓
@@ -25,11 +25,13 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
   weight = 10
   identifier = "home"
   url = "/"
+
 [[menu.main]]
   name = "归档"
   weight = 20
   identifier = "archives"
   url = "/post/"
+
 [[menu.main]]
   name = "分类"
   weight = 30
@@ -54,7 +56,6 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
   identifier = "about"
   url = "/about/"
 
-
 [params]
   version = "3.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
@@ -62,12 +63,12 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
   since = "2016"            # Site creation time          # 站点建立时间
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Cizel"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Cizel Blog"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Blog", "Cizel的博客", "Cizel", "PHP", "Go"]
   description = "爱编程，爱安全，爱生活 - Cizel.cn"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 10
+  archivePaginate = 20
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"

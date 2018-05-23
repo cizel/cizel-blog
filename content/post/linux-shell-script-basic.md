@@ -1,12 +1,12 @@
 ---
-title: "Shell 脚本编程实践 30%"
+title: "Shell 脚本编程基础 30%"
 date: 2018-05-20T12:38:57+08:00
-lastmod: 2018-05-20T12:38:57+08:00
+lastmod: 2018-05-23T12:38:57+08:00
 draft: false
 keywords: ["Linux", "Shell Script"]
 description: ""
 tags: []
-categories: ["最佳实践"]
+categories: ["Linux"]
 ---
 
 Linux Shell 脚本编程之前一直没有系统的去学习，在写 Shell 脚本的时候总需要现查各种语法。本文章以编程语言的维度去系统的学习 Shell 脚本编程。
