@@ -64,6 +64,7 @@ for file in `ls /etc`
 ### 变量使用
 
 ```bash
+# 定义变量 name
 name="cizel"
 
 # 使用美元 ($) 符号
@@ -71,6 +72,21 @@ echo $name
 
 # 使用美元 ($) 符号和括号结合, 常用于字符串拼接
 echo ${name}
+```
+
+or
+
+```bash
+# 高级用法
+
+# 默认值: 如果变量没有声明, 使用默认值 ${var=DEFAULT} 
+echo ${name="ok"}   
+# output: ok
+
+# 默认值: 如果变量没有声明,或者为空字符串, 使用默认值 ${var:=DEFAULT} 
+name=""
+echo ${name:="ok"}
+# output: ok
 ```
 
 ## Shell 字符串
