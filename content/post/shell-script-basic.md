@@ -89,6 +89,44 @@ echo ${name:="ok"}
 # output: ok
 ```
 
+## Shell 数字运算
+
+Shell 中的数字运算可以采用 `$((num1 + num2))` 的方式, 例如:
+
+> 可能的坑:
+
+> Shell 中的变量默认是字符串, 使用 `result=1+2;echo $result` , 输出会是 `1+2`
+> 数值运算的两个变量必须是 `数字` 或者 `数字字符串`, 不然会报错
+
+```bash
+a=2
+b="3"
+
+echo (($a + $b))
+# output: 5
+
+echo (($a - $b))
+# output: -1
+
+echo (($a * $b))
+# output: 6 
+
+echo (($a / $b))
+# output: 0
+
+# 取模/求余
+echo $(($a % $b))
+# output: 1
+
+# 乘方
+echo $(($a ** $b))
+# output: 8 
+
+# 复杂运算
+echo $(($a + ($a * $b)))
+# output: 8 
+```
+
 ## Shell 字符串
 
 Shell 的字符串与 PHP 的字符串相同, 分为 `单引号字符串` 和 `双引号字符串`

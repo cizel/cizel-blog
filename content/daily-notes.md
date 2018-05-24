@@ -13,6 +13,12 @@ categories: ["观点与感想"]
 
 ---
 
+## 2018-05-24
+
+## 2018-05-23
+
+在 Go 语言的 Web 框架 Gin 上使用, JWT(Json Web Token) 的中间件, 实践使用 JWT 的鉴权方式.
+
 ## 2018-05-22
 
 GitHub 添加 GPG Key (Signing commits using GPG), 避免传输过程中信息被篡改。提交代码使用：`git commit -S -m your commit`
