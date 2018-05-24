@@ -213,15 +213,86 @@ echo ${test/.vimrc/.zshrc}
 # output: /home/work/.zshrc
 
 echo ${test/w*k/cizel}
-# output: /home/cizel/.vimrc 
+# output: /home/cizel/.vimrc
 ```
 
+## Shell 逻辑运算
 
-## 未完，待续
+在 Shell 中，使用 `test` 来进行逻辑判断。与其他编程语言有许多不同，如果为真返回 `0`, 假返回 `1`.
+
+> 可能的坑：
+
+> 1. 路径判断结果真返回 `0`, 假返回 `1`
+> 2. 使用 `-gt`, `-lt`, `-ge`, `-le`, `-ne` 替换 `>`, `<`, `>=`, `<=`, `!=` 做数值比较
+
+### 数值比较
+
+数值比较的运算符和汇编语言中类似，常见的 5 种数值比较如下：
+
+| 符号 | 英文解释 | 中文解释 |
+| ---  |   ---    |   ---    |
+| `-gt` | greater than | 大于 |
+| `-lt` | less than | 小于 |
+| `-ge` | greater equal | 大于等于 |
+| `-le` | less equal | 小于等于 |
+| `-ne` | not equal | 不等于 |
+
+```bash
+# 大于
+test 3 -gt 2; echo $?
+# output: 0
+
+# 小于
+test 3 -lt 2; echo $?
+# output: 1
+
+# 大于等于
+test 3 -ge 2; echo $?
+# output: 0
+
+# 小于等于
+test 3 -le 2; echo $?
+# output: 1
+
+# 不等于
+test 3 -ne 2; echo $?
+# output: 0
+```
+
+### 字符串比较
+
+字符串比较的运算符如下表：
+
+| 符号 | 解释 |
+| ---  | --- |
+| `=` |  字符串等于 |
+| `!=` | 字符串不等 |
+
+```bash
+# 字符串等于
+test "my name is cizel" = "my name is cizel"; echo $?
+# output: 0
+
+# 字符串不等
+test "my name is cizel" = "my name is cz"; echo $?
+# output: 1
+```
+
+## Shell 选择结构
+
+## Shell 循环结构
+
+## Shell 函数
+
+## Shell 输入输出
+
+## Shell 跨脚本执行
+
+## 未完，待续..
 
 ## 相关链接
 
 - [linux 几种常见的 Shell](https://blog.csdn.net/whatday/article/details/78929247)
 - [Shell 脚本编程 30 分钟入门](https://github.com/qinjx/30min_guides/blob/master/shell.md)
 - [linux shell 字符串操作（长度，查找，替换）详解](https://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html)
-- [linux shell 正则表达式(BREs,EREs,PREs)差异比较](https://www.cnblogs.com/chengmo/archive/2010/10/10/1847287.html)
+- [linux shell 正则表达式 (BREs,EREs,PREs) 差异比较](https://www.cnblogs.com/chengmo/archive/2010/10/10/1847287.html)
