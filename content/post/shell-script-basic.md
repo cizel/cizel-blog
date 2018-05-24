@@ -1,7 +1,7 @@
 ---
-title: "Shell 脚本编程基础 30%"
+title: "Shell 脚本编程基础 35%"
 date: 2018-05-20T12:38:57+08:00
-lastmod: 2018-05-23T12:38:57+08:00
+lastmod: 2018-05-24T12:38:57+08:00
 draft: false
 keywords: ["Linux", "Shell Script"]
 description: ""
@@ -54,7 +54,7 @@ Shell 脚本属于弱类型的脚本语言，在使用的时候不需要提前�
 ### 变量定义
 
 ```bash
-# 直接赋值 
+# 直接赋值
 name="cizel"
 
 # 语句赋值
@@ -70,7 +70,7 @@ name="cizel"
 # 使用美元 ($) 符号
 echo $name
 
-# 使用美元 ($) 符号和括号结合, 常用于字符串拼接
+# 使用美元 ($) 符号和括号结合，常用于字符串拼接
 echo ${name}
 ```
 
@@ -79,11 +79,11 @@ or
 ```bash
 # 高级用法
 
-# 默认值: 如果变量没有声明, 使用默认值 ${var=DEFAULT} 
-echo ${name="ok"}   
+# 默认值：如果变量没有声明，使用默认值 ${var=DEFAULT}
+echo ${name="ok"}
 # output: ok
 
-# 默认值: 如果变量没有声明,或者为空字符串, 使用默认值 ${var:=DEFAULT} 
+# 默认值：如果变量没有声明，或者为空字符串，使用默认值 ${var:=DEFAULT}
 name=""
 echo ${name:="ok"}
 # output: ok
@@ -91,12 +91,12 @@ echo ${name:="ok"}
 
 ## Shell 数字运算
 
-Shell 中的数字运算可以采用 `$((num1 + num2))` 的方式, 例如:
+Shell 中的数字运算可以采用 `$((num1 + num2))` 的方式，例如：
 
-> 可能的坑:
+> 可能的坑：
 
-> Shell 中的变量默认是字符串, 使用 `result=1+2;echo $result` , 输出会是 `1+2`
-> 数值运算的两个变量必须是 `数字` 或者 `数字字符串`, 不然会报错
+> 1. Shell 中的变量默认是字符串，使用 `result=1+2;echo $result` , 输出会是 `1+2`
+> 2. 数值运算的两个变量必须是 `数字` 或者 `数字字符串`, 不然会报错
 
 ```bash
 a=2
@@ -109,27 +109,27 @@ echo (($a - $b))
 # output: -1
 
 echo (($a * $b))
-# output: 6 
+# output: 6
 
 echo (($a / $b))
 # output: 0
 
-# 取模/求余
+# 取模 / 求余
 echo $(($a % $b))
 # output: 1
 
 # 乘方
 echo $(($a ** $b))
-# output: 8 
+# output: 8
 
 # 复杂运算
 echo $(($a + ($a * $b)))
-# output: 8 
+# output: 8
 ```
 
 ## Shell 字符串
 
-Shell 的字符串与 PHP 的字符串相同, 分为 `单引号字符串` 和 `双引号字符串`
+Shell 的字符串与 PHP 的字符串相同，分为 `单引号字符串` 和 `双引号字符串`
 
 ### 字符串定义
 
@@ -148,7 +148,7 @@ echo 'my name is ${name}'
 
 ```bash
 name="cizel"
-echo $name $name 
+echo $name $name
 # output:cizel cizel
 ```
 
@@ -164,18 +164,64 @@ echo ${#name}
 
 ```bash
 name="my name is cizel"
+
+echo ${name:2}
+# output: name is cizel
+
 echo ${name:2:5}
-# output: name 
+# output: name
 ```
 
+### 字符串删除
 
+${变量名#substring 正则表达式} 从字符串 **开头** 开始配备 `substring`, 删除匹配上的表达式。
+${变量名 %substring 正则表达式} 从字符串 **结尾** 开始配备 `substring`, 删除匹配上的表达式。
 
+```bash
+test="/home/work/.vimrc"
+
+echo ${test#/home}
+# output: /work/.vimrc
+```
+
+or
+
+```bash
+# 高级用法
+
+test="/home/work/.vimrc"
+
+# 快速获取文件名
+echo ${test##*/}
+# output: .vimrc
+
+# 快速获取路径
+echo ${test%/*}
+# output: /home/work
+```
+
+### 字符串替换
+
+使用内置的字符串替换，会比 `awk`, `sed`, `expr` 的性能更好，
+
+${变量 / 查找 / 替换值} 一个"/"表示替换第一个，"//"表示替换所有。
+
+```bash
+test="/home/work/.vimrc"
+
+echo ${test/.vimrc/.zshrc}
+# output: /home/work/.zshrc
+
+echo ${test/w*k/cizel}
+# output: /home/cizel/.vimrc 
+```
 
 
 ## 未完，待续
 
 ## 相关链接
 
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [linux 几种常见的 Shell](https://blog.csdn.net/whatday/article/details/78929247)
 - [Shell 脚本编程 30 分钟入门](https://github.com/qinjx/30min_guides/blob/master/shell.md)
+- [linux shell 字符串操作（长度，查找，替换）详解](https://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html)
+- [linux shell 正则表达式(BREs,EREs,PREs)差异比较](https://www.cnblogs.com/chengmo/archive/2010/10/10/1847287.html)
