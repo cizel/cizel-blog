@@ -1,7 +1,7 @@
 ---
 title: "日常记录 - Flag"
 date: 2018-05-16T23:46:44+08:00
-lastmod: 2018-05-16T23:46:44+08:00
+lastmod: 2018-05-24T23:46:44+08:00
 draft: false
 keywords: ['Spacemacs', 'Spacevim']
 categories: ["观点与感想"]
@@ -9,15 +9,19 @@ categories: ["观点与感想"]
 
 ## 日常立 Flag
 
-- 写 Shell 脚本编程的使用文档 （创建时间：2018-05-18, 进度`30%`)
+- 写 Shell 脚本编程的使用文档 （创建时间：2018-05-18, 进度`35%`)
 
 ---
 
 ## 2018-05-24
 
+Shell 脚本编程进度更新 `30%` to `35%`.
+
+理解了 Nginx 的 Location 功能，可以在不同的 `Location /api` 运行一个新的服务。
+
 ## 2018-05-23
 
-在 Go 语言的 Web 框架 Gin 上使用, JWT(Json Web Token) 的中间件, 实践使用 JWT 的鉴权方式.
+在 Go 语言的 Web 框架 Gin 上使用，JWT(Json Web Token) 的中间件，实践使用 JWT 的鉴权方式。
 
 ## 2018-05-22
 
