@@ -87,7 +87,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
 
   postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
-  contentCopyright = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" title="(CC BY 4.0)"><i class="fa fa-creative-commons"></i> 署名 4.0 国际</a>'     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  contentCopyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.zh"><i class="fa fa-creative-commons"></i> 署名-非商业性使用 4.0 国际 </a>'     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 畅言
   changyanAppkey = ""       # Changyan app key
