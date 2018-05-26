@@ -1,5 +1,5 @@
 ---
-title: "Shell 脚本编程基础 35%"
+title: "Shell 脚本编程基础 40%"
 date: 2018-05-20T12:38:57+08:00
 lastmod: 2018-05-24T12:38:57+08:00
 draft: false
@@ -223,8 +223,12 @@ echo ${test/w*k/cizel}
 
 > 可能的坑：
 
-> 1. 路径判断结果真返回 `0`, 假返回 `1`
-> 2. 使用 `-gt`, `-lt`, `-ge`, `-le`, `-ne` 替换 `>`, `<`, `>=`, `<=`, `!=` 做数值比较
+> 1. 逻辑判断结果真返回 `0`, 假返回 `1`
+> 2. 使用 `-gt`, `-lt`, `-ge`, `-le`, `-ne`, `-eq`  替换 `>`, `<`, `>=`, `<=`, `!=`, `=` 做数值比较
+> 2. 与或非运算符使用 `-a`, `-o`, `!` 替换 `&` `|` `!`
+
+
+
 
 ### 数值比较
 
@@ -237,6 +241,7 @@ echo ${test/w*k/cizel}
 | `-ge` | greater equal | 大于等于 |
 | `-le` | less equal | 小于等于 |
 | `-ne` | not equal | 不等于 |
+| `-eq` | equal | 等于 |
 
 ```bash
 # 大于
@@ -258,6 +263,10 @@ test 3 -le 2; echo $?
 # 不等于
 test 3 -ne 2; echo $?
 # output: 0
+
+# 等于
+test 3 -eq 2; echo $?
+# output: 1
 ```
 
 ### 字符串比较
@@ -268,6 +277,8 @@ test 3 -ne 2; echo $?
 | ---  | --- |
 | `=` |  字符串等于 |
 | `!=` | 字符串不等 |
+| `-z` | 判断字符串长度是否为零 |
+| `-n` | 判断字符串长度是否大于零 |
 
 ```bash
 # 字符串等于
@@ -277,6 +288,85 @@ test "my name is cizel" = "my name is cizel"; echo $?
 # 字符串不等
 test "my name is cizel" = "my name is cz"; echo $?
 # output: 1
+
+# 字符串长度判断
+test -z "my name is cizel"; echo $?
+# output: 1
+test -n "my name is cizel"; echo $?
+# output: 0
+```
+
+### 文件比较
+
+| 符号 | 解释 |
+| ---  | --- |
+| `-e` | 判断文件是否**存在**. |
+| `-d` | 判断文件是否为**目录**. |
+| `-f` | 判断文件是否为**常规文件**. |
+| `-L` | 判断文件是否为**符号链接**. |
+| `-r` | 判断文件是否**可读**. |
+| `-w` | 判断文件是否**可写**. |
+| `-x` | 判断文件是否**可执行**. |
+
+```bash
+ls -l
+
+# 当前目录有如下文件，lib 文件夹，run.sh 文件，sh 符号链接，当前角色：work
+# drwxr-xr-x 1 work work 4096 Jun 28  2018 lib
+# -rwxr-xr-x 1 work work 2364 Jul  7  2018 run.sh
+# lrwxrwxrwx 1 root root    4 May 26  2014 sh -> bash
+
+# 判断文件是否存在
+test -e run.sh; echo $?
+# output: 0
+
+# 判断目录是否存在
+test -d lib; echo $?
+# output: 0
+
+# 判断文件是否为常规文件
+test -f run.sh; echo $?
+# output: 0
+
+# 判断文件是否为符号链接
+test -L sh; echo $?
+# output: 0
+
+# 判断文件是否为符号链接
+test -L sh; echo $?
+# output: 0
+
+# 判断文件是否可读 / 写 / 执行 （当前角色 work, 权限 rwx, 可读可写可执行）
+test -r run.sh; echo $?
+# output: 0
+test -w run.sh; echo $?
+# output: 0
+test -x run.sh; echo $?
+# output: 0
+```
+
+### 逻辑连接
+
+与其他编程语言一样，Shell 中也有与或非运算符。用于连接逻辑判断条件，形成复合的逻辑判断。
+
+| 符号 | 英文解释 | 中文解释 |
+| ---  |   ---    |   ---    |
+| `-a` | and | 与 |
+| `-o` |  or | 或 |
+| `!` | -- | 非 |
+
+```bash
+# 与
+test "1" = "1" -a "1" = "2"; echo $?
+# output: 1
+
+# 或
+test "1" = "1" -o "1" = "2"; echo $?
+# output: 0
+
+#非
+test ! "1" = "2"; echo $?
+# output: 0
 ```
 
 ## Shell 选择结构
