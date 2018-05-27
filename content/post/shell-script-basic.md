@@ -1,5 +1,5 @@
 ---
-title: "Shell 脚本编程基础 40%"
+title: "Shell 脚本编程基础"
 date: 2018-05-20T12:38:57+08:00
 lastmod: 2018-05-24T12:38:57+08:00
 draft: false
@@ -54,6 +54,8 @@ Shell 脚本属于弱类型的脚本语言，在使用的时候不需要提前�
 ### 变量定义
 
 ```bash
+#!/bin/bash
+
 # 直接赋值
 name="cizel"
 
@@ -64,6 +66,8 @@ for file in `ls /etc`
 ### 变量使用
 
 ```bash
+#!/bin/bash
+
 # 定义变量 name
 name="cizel"
 
@@ -77,6 +81,8 @@ echo ${name}
 or
 
 ```bash
+#!/bin/bash
+
 # 高级用法
 
 # 默认值：如果变量没有声明，使用默认值 ${var=DEFAULT}
@@ -99,6 +105,8 @@ Shell 中的数字运算可以采用 `$((num1 + num2))` 的方式，例如：
 > 2. 数值运算的两个变量必须是 `数字` 或者 `数字字符串`, 不然会报错
 
 ```bash
+#!/bin/bash
+
 a=2
 b="3"
 
@@ -134,6 +142,8 @@ Shell 的字符串与 PHP 的字符串相同，分为 `单引号字符串` 和 `
 ### 字符串定义
 
 ```bash
+#!/bin/bash
+
 $name="cizel"
 #单引号中变量和符号不会被解析
 echo 'my name is ${name}'
@@ -147,6 +157,8 @@ echo 'my name is ${name}'
 ### 字符串连接
 
 ```bash
+#!/bin/bash
+
 name="cizel"
 echo $name $name
 # output:cizel cizel
@@ -155,6 +167,8 @@ echo $name $name
 ### 字符串长度
 
 ```bash
+#!/bin/bash
+
 name="cizel"
 echo ${#name}
 # output: 5
@@ -163,6 +177,8 @@ echo ${#name}
 ### 字符串截取
 
 ```bash
+#!/bin/bash
+
 name="my name is cizel"
 
 echo ${name:2}
@@ -179,6 +195,8 @@ ${变量名#substring 正则表达式} 从字符串 **开头** 开始配备 `sub
 ${变量名 %substring 正则表达式} 从字符串 **结尾** 开始配备 `substring`, 删除匹配上的表达式。
 
 ```bash
+#!/bin/bash
+
 test="/home/work/.vimrc"
 
 echo ${test#/home}
@@ -188,6 +206,8 @@ echo ${test#/home}
 or
 
 ```bash
+#!/bin/bash
+
 # 高级用法
 
 test="/home/work/.vimrc"
@@ -208,6 +228,8 @@ echo ${test%/*}
 ${变量 / 查找 / 替换值} 一个"/"表示替换第一个，"//"表示替换所有。
 
 ```bash
+#!/bin/bash
+
 test="/home/work/.vimrc"
 
 echo ${test/.vimrc/.zshrc}
@@ -227,15 +249,12 @@ echo ${test/w*k/cizel}
 > 2. 使用 `-gt`, `-lt`, `-ge`, `-le`, `-ne`, `-eq`  替换 `>`, `<`, `>=`, `<=`, `!=`, `=` 做数值比较
 > 2. 与或非运算符使用 `-a`, `-o`, `!` 替换 `&` `|` `!`
 
-
-
-
 ### 数值比较
 
 数值比较的运算符和汇编语言中类似，常见的 5 种数值比较如下：
 
 | 符号 | 英文解释 | 中文解释 |
-| ---  |   ---    |   ---    |
+| ---  |   ---  |   ---    |
 | `-gt` | greater than | 大于 |
 | `-lt` | less than | 小于 |
 | `-ge` | greater equal | 大于等于 |
@@ -244,6 +263,8 @@ echo ${test/w*k/cizel}
 | `-eq` | equal | 等于 |
 
 ```bash
+#!/bin/bash
+
 # 大于
 test 3 -gt 2; echo $?
 # output: 0
@@ -281,6 +302,8 @@ test 3 -eq 2; echo $?
 | `-n` | 判断字符串长度是否大于零 |
 
 ```bash
+#!/bin/bash
+
 # 字符串等于
 test "my name is cizel" = "my name is cizel"; echo $?
 # output: 0
@@ -309,12 +332,14 @@ test -n "my name is cizel"; echo $?
 | `-x` | 判断文件是否**可执行**. |
 
 ```bash
+#!/bin/bash
+
 ls -l
 
 # 当前目录有如下文件，lib 文件夹，run.sh 文件，sh 符号链接，当前角色：work
 # drwxr-xr-x 1 work work 4096 Jun 28  2018 lib
 # -rwxr-xr-x 1 work work 2364 Jul  7  2018 run.sh
-# lrwxrwxrwx 1 root root    4 May 26  2014 sh -> bash
+# lrwxrwxrwx 1 root root  4 May 26  2014 sh -> bash
 
 # 判断文件是否存在
 test -e run.sh; echo $?
@@ -350,12 +375,14 @@ test -x run.sh; echo $?
 与其他编程语言一样，Shell 中也有与或非运算符。用于连接逻辑判断条件，形成复合的逻辑判断。
 
 | 符号 | 英文解释 | 中文解释 |
-| ---  |   ---    |   ---    |
+| ---  |   ---  |   ---    |
 | `-a` | and | 与 |
 | `-o` |  or | 或 |
 | `!` | -- | 非 |
 
 ```bash
+#!/bin/bash
+
 # 与
 test "1" = "1" -a "1" = "2"; echo $?
 # output: 1
@@ -371,15 +398,177 @@ test ! "1" = "2"; echo $?
 
 ## Shell 选择结构
 
+Shell 中的选择语句和其他编程语言类似，支持 if, if-else, if-elif, if-elif-else, case-esac 常见的条件选择方式
+
+> 可能的坑：
+
+> 1. if 条件的左括号 (`[`) 后必须有一个空格，右括号前 (`]`) 必须有一个空格。if [<kbd>空格</kbd>expression<kbd>空格</kbd>]
+> 2. if, elif 后面都需要加 `then` 然后添加语句
+
+### if 选择
+
+```bash
+#!/bin/bash
+
+var=`uname -s`
+
+if [ $var = "Linux" ]; then
+  echo "Linux System"
+fi
+```
+
+### if-else 选择
+
+```bash
+#!/bin/bash
+
+var=`uname -s`
+
+if [ $var = "Linux" ]; then
+  echo "Linux System"
+else
+  echo "Other System"
+fi
+```
+
+### if-elif 选择
+
+```bash
+#!/bin/bash
+
+var=`uname -s`
+
+if [ $var = "Linux" ]; then
+  echo "Linux System"
+elif [ $var = "FreeBSD" ]; then
+  echo "FreeBSD System"
+fi
+```
+
+### if-elif-else 选择
+
+```bash
+#!/bin/bash
+
+var=`uname -s`
+
+if [ $var = "Linux" ]; then
+  echo "Linux System"
+elif [ $var = "FreeBSD" ]; then
+  echo "FreeBSD System"
+else
+  echo "Other System"
+fi
+```
+### case-esac 选择
+
+case-esac 与常用的 switch-case 类似，可以对比 if-elif-else 选择食用
+
+```bash
+#!/bin/bash
+
+var=`uname -s`
+
+case $var in
+"Linux")
+  echo "Linux System"
+  ;;
+"FreeBSD")
+  echo "FreeBSD System"
+  ;;
+*)
+  echo "Other System"
+  ;;
+esac
+```
+
 ## Shell 循环结构
+
+### for 循环
+
+常见的类似 c 语言的写法
+
+```bash
+#!/bin/bash
+
+# 打印 1-10, 必须使用双括号，使符号转移
+for ((i=1; i<=10; i++)); do
+  echo $i
+done
+```
+
+in 的方法 (**常用**)
+
+```bash
+#!/bin/bash
+
+for i in {1..10}; do
+  echo $i
+done
+```
+
+### while 循环
+
+```bash
+#!/bin/bash
+
+count=1
+while [ $count -lt 3 ]; do
+  echo $count
+  count=$((count + 1))
+done
+```
+
+### until 循环
+
+直到条件为真时，停止循环
+
+```bash
+#!/bin/bash
+
+count=1
+until [ $count -eq 3 ]; do
+  echo $count
+  count=$((count + 1))
+done
+```
 
 ## Shell 函数
 
-## Shell 输入输出
+Shell 函数，使用 $1..$n 的方式接收参数
 
-## Shell 跨脚本执行
+```bash
+#!/bin/bash
 
-## 未完，待续..
+my_func() {
+  echo "my function"
+  echo "params 1: $1"
+  echo "params 2: $2"
+  echo "params 3: $3"
+}
+
+my_func 1 2 3
+```
+
+## Shell 加载脚本
+
+Shell 中使用 `source` 命令可以加载其他文件到当前 Shell 脚本中
+
+```bash
+# echo.sh
+
+echo() {
+  command printf %s\\n "$*" 2>/dev/null
+}
+```
+
+```bash
+#!/bin/bash
+
+source echo.sh
+
+echo 123
+```
 
 ## 相关链接
 
@@ -387,3 +576,4 @@ test ! "1" = "2"; echo $?
 - [Shell 脚本编程 30 分钟入门](https://github.com/qinjx/30min_guides/blob/master/shell.md)
 - [linux shell 字符串操作（长度，查找，替换）详解](https://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html)
 - [linux shell 正则表达式 (BREs,EREs,PREs) 差异比较](https://www.cnblogs.com/chengmo/archive/2010/10/10/1847287.html)
+- [Shell 风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/google-shell-styleguide/contents/)

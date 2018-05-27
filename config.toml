@@ -1,7 +1,5 @@
-baseURL = "https://www.cizel.cn/"
-languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "Cizel's Blog - 想要成为一个很厉害的人"
+title = "Cizel's Blog - 如何成为一个很厉害的人"
 enableRobotsTXT = true
 enableEmoji = true
 
