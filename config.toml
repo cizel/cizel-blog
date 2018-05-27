@@ -101,7 +101,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
   customJS = []
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-    enable = true 
+    enable = false 
     jquery = '<script src="https://cdn.cizel.cn/dist/js/jquery.min.js"></script>'
     slideout = '<script src="https://cdn.cizel.cn/dist/js/slideout.min.js"></script>'
     fancyboxJs = '<script src="https://cdn.cizel.cn/dist/js/jquery.fancybox.min.js"></script>'
@@ -119,7 +119,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = "cizel"              # Your GitHub ID
-    repo = "blog-comment"               # The repo to store comments
+    repo = "cizel-blog"               # The repo to store comments
     clientId = "33532f4ec0b513251b74"           # Your client ID
     clientSecret = "c32af5d88d01e52d5b0543336c1a877e1ecbe179"       # Your client secret
 
