@@ -101,7 +101,7 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
   customJS = []
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-    enable = true
+    enable = true 
     jquery = '<script src="https://cdn.cizel.cn/dist/js/jquery.min.js"></script>'
     slideout = '<script src="https://cdn.cizel.cn/dist/js/slideout.min.js"></script>'
     fancyboxJs = '<script src="https://cdn.cizel.cn/dist/js/jquery.fancybox.min.js"></script>'
@@ -111,11 +111,11 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
     gitalkJS = '<script src="https://cdn.cizel.cn/dist/js/gitalk.min.js">'
     gitalkCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/gitalk.css">'
 
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
+  #[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  #  owner = ""              # Your GitHub ID
+  #  repo = ""               # The repo to store comments
+  #  clientId = ""           # Your client ID
+  #  clientSecret = ""       # Your client secret
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = "cizel"              # Your GitHub ID
