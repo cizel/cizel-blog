@@ -6,7 +6,7 @@ enableEmoji = true
 preserveTaxonomyNames = true
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 6                                              # 首页每页显示的文章数
-disqusShortname = "cizel"      # disqus_shortname
+#disqusShortname = "cizel"      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
@@ -111,17 +111,17 @@ copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: a
     gitalkJS = '<script src="https://cdn.cizel.cn/dist/js/gitalk.min.js">'
     gitalkCSS = '<link rel="stylesheet" href="https://cdn.cizel.cn/dist/css/gitalk.css">'
 
- # [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
- #   owner = "cizel"              # Your GitHub ID
- #   repo = "blog-comment"               # The repo to store comments
- #   clientId = "33532f4ec0b513251b74"           # Your client ID
- #   clientSecret = "c32af5d88d01e52d5b0543336c1a877e1ecbe179"       # Your client secret
-
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = ""              # Your GitHub ID
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
+
+  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+    owner = "cizel"              # Your GitHub ID
+    repo = "blog-comment"               # The repo to store comments
+    clientId = "33532f4ec0b513251b74"           # Your client ID
+    clientSecret = "c32af5d88d01e52d5b0543336c1a877e1ecbe179"       # Your client secret
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false

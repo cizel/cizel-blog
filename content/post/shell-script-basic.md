@@ -1,7 +1,7 @@
 ---
-title: "Shell 脚本编程基础"
-date: 2018-05-20T12:38:57+08:00
-lastmod: 2018-05-24T12:38:57+08:00
+title: "如何快速入手 Shell 脚本编程"
+date: 2018-05-18T12:38:57+08:00
+lastmod: 2018-05-27T12:38:57+08:00
 draft: false
 keywords: ["Linux", "Shell Script"]
 description: ""
