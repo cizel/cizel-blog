@@ -14,6 +14,10 @@ categories: ["观点与感想"]
 
 ---
 
+## 2018-06-01
+
+今天是六一, 后面计划使用 `asciinema.org` 作为终端录制, 来继续学习 `Shell` 的相关有趣的命令, 比如: `tcpdump`
+
 ## 2018-05-31
 
 `打卡 Vim 04`: 获取离线帮助的方法使用 `:h something`, `doautocmd` 用于自动化执行命令. 后面开始看 `Practival Vim`
