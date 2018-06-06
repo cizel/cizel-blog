@@ -14,6 +14,14 @@ categories: ["观点与感想"]
 
 ---
 
+## 2018-06-06
+
+配置 electron 的一个项目, 遇到的问题:
+
+`xcode-select error` 的问题, 安装 xcode 就可以解决, 并重新设置 `xcode-select` 的路径就好了
+
+`npm install` 出现 `error Unexpected end of JSON input`, 原因是安装源的内容获取不到(大概是...),使用淘宝源可以解决这个问题.
+
 ## 2018-06-05
 
 公司组织了 GO 语言的培训, 讲师是一直想认识的人. 但真正看到讲师的时候, 发现之前很早就见过. 讲的内容比较深听的云里雾里的. 
