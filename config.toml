@@ -1,5 +1,5 @@
 baseURL = "https://www.cizel.cn"
-title = "Cizel's Blog - 如何成为一个很厉害的人"
+title = "Cizel's Blog"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -9,7 +9,7 @@ paginate = 6                                              # 首页每页显示�
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = "<a href=\"https://www.cizel/cn\">Cizel</a>"            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = "<a href=\"https://www.cizel.cn\">Cizel</a>"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
@@ -138,7 +138,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:i@cizel.com"
+    a-email = "mailto:i@cizel.cn"
     g-github = "http://github.com/cizel/"
 
 # jsonfeed support
