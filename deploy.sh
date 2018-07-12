@@ -1,3 +1,3 @@
 git submodule update --init --recursive
-hugo -t even
+hugo -t jane
 rsync -avz ./public/ /home/work/data/www/www.cizel.cn/
