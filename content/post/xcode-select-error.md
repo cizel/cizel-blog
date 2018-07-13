@@ -4,7 +4,7 @@ date: 2018-05-02T07:54:46+08:00
 keywords: ["Hugo"]
 tags: ["xcode-select", "error", "xcodebuild", "CommandLineTools"]
 categories: ["解决方案"]
-draft: false
+draft: true
 ---
 
 安装 electron 项目时候的报错
