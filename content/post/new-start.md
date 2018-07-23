@@ -9,6 +9,9 @@ draft: false
 
 Cizel's Blog 经历了多次迁移, 当前版本为 Hugo
 
+![](https://static.cizel.cn/2018-07-23-15323099233301.png)
+
+
 <!--more-->
 
 从 WordPress 转到 Z-blog，WordPress 太臃肿，不够简洁

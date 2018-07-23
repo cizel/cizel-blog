@@ -7,6 +7,12 @@ keywords: ["Memcache"]
 categories: ["PHP", "笔记"]
 ---
 
+本文从多个方面去了解 memcache
+
+![](https://static.cizel.cn/2018-07-23-15323100571073.jpg)
+
+
+<!--more-->
 ##  Memcache 介绍
 
 ### 什么是 Memcache
@@ -15,8 +21,6 @@ Memcache 是一套分布式高速缓存系统，
 
 - 分布式：以在多台操作系统中同时安装 Memcache 服务，可以达到很好的集群效果。
 - 高速：Memcache 所有的数据都是维护在内存中的。
-
-<!--more-->
 
 ### Memcache 有什么用？
 

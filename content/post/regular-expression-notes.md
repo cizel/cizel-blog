@@ -9,6 +9,9 @@ categories: ["笔记", "PHP"]
 
 最近在做 Markdown 转 UBB (Discuz编辑器) 的一个PHP的工具，运用到了正则。故复习了一遍。
 
+![](https://static.cizel.cn/2018-07-23-15323100109852.jpg)
+
+
 <!--more-->
 
 ## 0x01 正则基本语法

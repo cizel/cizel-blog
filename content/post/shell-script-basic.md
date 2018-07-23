@@ -4,12 +4,14 @@ date: 2018-05-18T12:38:57+08:00
 lastmod: 2018-05-27T12:38:57+08:00
 draft: false
 keywords: ["Linux", "Shell Script"]
-description: ""
-tags: []
+tags: ["Linux", "Shell"]
 categories: ["Linux"]
 ---
 
 Linux Shell 脚本编程之前一直没有系统的去学习，在写 Shell 脚本的时候总需要现查各种语法。本文章以编程语言的维度去系统的学习 Shell 脚本编程。
+
+![](https://static.cizel.cn/2018-07-23-15323097488145.jpg)
+
 
 <!--more-->
 
@@ -577,3 +579,5 @@ echo 123
 - [linux shell 字符串操作（长度，查找，替换）详解](https://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html)
 - [linux shell 正则表达式 (BREs,EREs,PREs) 差异比较](https://www.cnblogs.com/chengmo/archive/2010/10/10/1847287.html)
 - [Shell 风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/google-shell-styleguide/contents/)
+
+
