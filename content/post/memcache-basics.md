@@ -7,11 +7,6 @@ keywords: ["Memcache"]
 categories: ["PHP", "笔记"]
 ---
 
-本文从多个方面去了解 memcache
-
-![](https://static.cizel.cn/2018-07-23-15323100571073.jpg)
-
-
 <!--more-->
 ##  Memcache 介绍
 
