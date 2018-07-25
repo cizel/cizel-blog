@@ -66,8 +66,8 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 [[menu.main]]
   name = "友链"
   weight = 70
-  identifier = "link"
-  url = "/link/"
+  identifier = "links"
+  url = "/links/"
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
