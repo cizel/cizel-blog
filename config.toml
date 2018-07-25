@@ -63,6 +63,12 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   identifier = "about"
   url = "/about/"
 
+[[menu.main]]
+  name = "友链"
+  weight = 70
+  identifier = "link"
+  url = "/link/"
+
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
   # uglyURLs = true          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
