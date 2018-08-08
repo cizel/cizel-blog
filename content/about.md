@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "关于"
 date: 2016-04-07T21:34:39+08:00
 comment: false
 draft: false
@@ -17,7 +17,6 @@ draft: false
 - 从 Z-blog 转到 GitBlog，喜欢上了 Markdown; 
 - 从 GitBlog 转到 Typecho, 简洁，Markdown 支持友好;
 - 从 Typecho 转到 Hugo, 拥抱开源享受 Github 提交的乐趣
-
 
 ## 关于我
 
