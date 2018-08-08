@@ -10,7 +10,6 @@ categories: []
 
 ## 友情链接
 
-- [itjesse's Blog](https://www.itjesse.com/)
 - [Swings's Blog](http://bestwing.me)
 - [世事繁华皆成空](http://qtfreet.com/)
 - [4ido10n's Blog](https://www.hackfun.org/)
@@ -18,7 +17,7 @@ categories: []
 
 ## 基本信息
 
-> 网站名称：Cizel Blog
+> 网站名称：Cizel's Blog
 >
 > 网站地址：www.cizel.cn
 >
