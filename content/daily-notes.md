@@ -18,6 +18,8 @@ categories: ["观点与感想"]
 
 备份: 如果项目中没有使用到 Maven, 但是需要 Maven 包的依赖, 可以使用 `Dependency Copy` 的方式将依赖下载.
 
+`cmdchallenge.com ` 通过任务的方式, 练习 Linux 的基本操作. (推荐)
+
 ## 2018-08-09
 
 新软件: `frp` 基于 Go 语言编写的内网穿透软件, 类似于 `ngork` 这个软件. 原理是将数据转发到外网可访问的 server, 由 server 转发端口和 tcp/udp http 的数据包. 
