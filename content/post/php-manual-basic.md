@@ -7,7 +7,7 @@ lastmod: 2018-11-21T23:47:03+08:00
 keywords: ["PHP", "学习笔记"]
 
 tags: ["PHP", "学习笔记"]
-categories: ["PHP开发"]
+categories: ["PHP语言"]
 
 draft: false
 ---
