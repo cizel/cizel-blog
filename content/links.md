@@ -1,11 +1,15 @@
 ---
 title: "友情链接"
+
 date: 2018-05-09T22:36:27+08:00
-lastmod: 2018-05-09T22:36:27+08:00
+lastmod: 2018-11-21T23:47:03+08:00
+
+keywords: ["友情", "links"]
+
+tags: ["友情链接", "links"]
+categories: ["观点与感想"]
+
 draft: false
-keywords: ["友情链接"]
-tags: []
-categories: []
 ---
 
 ## 友情链接

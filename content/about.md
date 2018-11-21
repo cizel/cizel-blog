@@ -1,7 +1,16 @@
 ---
 title: "关于"
+
 date: 2016-04-07T21:34:39+08:00
+lastmod: 2018-11-21T23:47:03+08:00
+
+keywords: ["关于", "about"]
+
+tags: ["关于", "about"]
+categories: ["观点与感想"]
+
 comment: false
+
 draft: false
 ---
 
@@ -29,3 +38,5 @@ Cizel 软件工程专业，学过 C/C++、Java、PHP、Python、Go 学过安全�
 Github: [https://github.com/cizel/][1]
 
 [1]:https://github.com/cizel/
+
+

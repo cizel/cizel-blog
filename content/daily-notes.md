@@ -1,25 +1,22 @@
 ---
-title: "日常记录 - Flag"
+title: "日常 Flag 记录"
+
 date: 2018-05-16T23:46:44+08:00
-lastmod: 2018-05-24T23:46:44+08:00
-draft: false
-keywords: ['Spacemacs', 'Spacevim']
+lastmod: 2018-11-21T23:47:03+08:00
+
+keywords: ['Flag', '记录']
+
+tags: ["Flag", "记录"]
 categories: ["观点与感想"]
+
+draft: false
 ---
 
 ## Flag 记录
 
 - [x] 写 Shell 脚本编程的使用文档 （开始时间：2018-05-18, 完成时间：2018-05-27)
-- ~~Vim 每日学习新操作，一个周打卡（开始时间：2018-05-28, 完成时间：未知, 终止时间: 2018-08-08）~~
 
 ---
-
-{{% center %}}
-![学习计划表](https://static.cizel.cn/2018-11-21-学习计划表.png)
-{{% /center %}}
-
-
-
 
 ## 2018-11-05
 
