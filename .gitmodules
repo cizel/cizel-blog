@@ -1,6 +1,0 @@
-[submodule "themes/even"]
-	path = themes/even
-	url = https://github.com/cizel/hugo-theme-even
-[submodule "themes/jane"]
-	path = themes/jane
-	url = https://github.com/cizel/hugo-theme-jane
