@@ -1,11 +1,15 @@
 ---
 title: "如何快速入手 Shell 脚本编程"
+
 date: 2018-05-18T12:38:57+08:00
-lastmod: 2018-05-27T12:38:57+08:00
+lastmod: 2018-11-21T23:47:03+08:00
+
+keywords: ["Linux", "Shell", "Shell Script"]
+
+tags: ["Linux", "Shell", "Shell Script"]
+categories: ["开发者手册"]
+
 draft: false
-keywords: ["Linux", "Shell Script"]
-tags: ["Linux", "Shell"]
-categories: ["Linux"]
 ---
 
 Linux Shell 脚本编程之前一直没有系统的去学习，在写 Shell 脚本的时候总需要现查各种语法。本文章以编程语言的维度去系统的学习 Shell 脚本编程。

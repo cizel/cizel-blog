@@ -1,12 +1,16 @@
 ---
 title: "[NextOne] 安全勇士30强诞生赛 Writeup"
+
 date: 2016-07-08T23:49:15+08:00
-lastmod: 2018-05-09T23:49:15+08:00
+lastmod: 2018-11-21T23:47:03+08:00
+
+
+keywords: ["CTF", "安全"]
+
+tags: ["CTF", "安全"]
+categories: ["网络安全"]
+
 draft: false
-keywords: []
-description: ""
-tags: []
-categories: ["CTF"]
 ---
 
 Cizel在几天前，参加了i春秋，腾讯实习30强挑战赛，得到了26名的成绩，总分1721分。PWN的 writeup 和逆向的 writeup 没有。

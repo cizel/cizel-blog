@@ -1,8 +1,15 @@
 ---
-title: "PHP 手册阅读笔记 - 语言参考篇"
+title: "PHP 手册学习笔记 - 语言参考篇"
+
 date: 2017-03-04T10:07:44+08:00
+lastmod: 2018-11-21T23:47:03+08:00
+
+keywords: ["PHP", "学习笔记"]
+
+tags: ["PHP", "学习笔记"]
+categories: ["PHP开发"]
+
 draft: false
-categories: ["PHP"]
 ---
 
 最近计划把 PHP手册，认真的先过一遍。记录一些以前不知道，不明确的知识。

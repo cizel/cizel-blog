@@ -1,13 +1,15 @@
 ---
 title: "Linux 从折腾到结束"
+
 date: 2016-06-21T23:47:03+08:00
-lastmod: 2018-05-09T23:47:03+08:00
-draft: false
-keywords: ["Linux"]
-description: ""
-tags: []
+lastmod: 2018-11-21T23:47:03+08:00
+
+keywords: ["Linux", "感想", "折腾"]
+
+tags: ["Linux", "感想", "折腾"] 
 categories: ["观点与感想"]
-author: ""
+
+draft: false
 ---
 
 在只用Linux单系统之前，脑袋里面一直有一种声音“别用双系统了，再用Linux的东西，你什么也学习不到”。
@@ -66,3 +68,5 @@ Linux 桌面系统还是存在着很多的问题，特别是某些程序的不�
 暂时先回到 Windows，等自己挣到 MacBook 的钱，就换MacBook Pro，从此 Windows 是路人。
 
 > 现在已经有属于自己的 MacBook Pro 了
+
+
