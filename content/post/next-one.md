@@ -1,5 +1,5 @@
 ---
-title: "[NextOne] 安全勇士30强诞生赛 Writeup"
+title: "NextOne 安全勇士30强诞生赛 Writeup"
 
 date: 2016-07-08T23:49:15+08:00
 lastmod: 2018-11-21T23:47:03+08:00
