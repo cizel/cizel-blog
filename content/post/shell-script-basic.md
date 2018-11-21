@@ -10,9 +10,6 @@ categories: ["Linux"]
 
 Linux Shell 脚本编程之前一直没有系统的去学习，在写 Shell 脚本的时候总需要现查各种语法。本文章以编程语言的维度去系统的学习 Shell 脚本编程。
 
-![](https://static.cizel.cn/2018-07-23-15323097488145.jpg)
-
-
 <!--more-->
 
 ## Shell
