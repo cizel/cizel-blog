@@ -14,7 +14,11 @@ categories: ["观点与感想"]
 
 ---
 
+{{% center %}}
 ![学习计划表](https://static.cizel.cn/2018-11-21-学习计划表.png)
+{{% /center %}}
+
+
 
 
 ## 2018-11-05
