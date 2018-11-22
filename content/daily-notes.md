@@ -50,10 +50,11 @@ draft: false
 | 2018.06.01 | `asciinema.org` | 用于检测项目的 License 是否合法 |
 | 2018.06.02 | `Cacher` | 使用 github gist 管理自己的代码片段， 支持分类， 标签和搜索 |
 | 2018.06.02 | `sourcegraph` | `sourcegraph`， 这个项目可以用于查看 Github 的源码， 并支持代码的跳转 |
-| 2018.08.28 | `cmdchallenge.com`  | Linux基础命令闯关练习 (`强烈推荐`) |
-| 2018.11.05 | `v2ray` | 类似于 `ss` 的软件， 也是一种不错解决方案 |
 | 2018.08.09 | `frp` | 基于 Go 语言编写的内网穿透软件，  类似于 `ngork` 这个软件。原理是将数据转发到外网可访问的 server， 由 server 转发端口和 tcp/udp http 的数据包|
+| 2018.08.28 | `cmdchallenge.com`  | Linux基础命令闯关练习 (`强烈推荐`) |
+| 2018.09.05 | `v2ray` | 类似于 `ss` 的软件， 也是一种不错解决方案 |
 | 2018.11.05 | `hey` | `ab` 压测工具的替代品 |
+| 2018.11.22 | `jsdelivr` | [jsdelivr](https://www.jsdelivr.com) 优秀的前端cdn镜像 |
 
 ---
 
