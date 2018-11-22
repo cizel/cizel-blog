@@ -1,7 +1,7 @@
 baseURL = "https://www.cizel.cn/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "Cizel's Blog - 想成为一个很厉害的人"
+title = "Cizel's Blog - 想成长为一个很厉害的人"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
