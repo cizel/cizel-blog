@@ -74,11 +74,11 @@ draft: false
 
 ## 解决方案
 
-| 时间 | 关键词 | 方案 |
-| --- | --- | --- |
-| 2018.06.06 | `xcode-select error`  | `xcode-select error` 的问题， 安装 xcode 就可以解决，并重新设置 `xcode-select` 的路径 | 
-| 2018.06.06 | `error Unexpected end of JSON input`  | `npm install` 出现 `error Unexpected end of JSON input`，原因是安装源的内容获取不到(大概是...)，使用淘宝源可以解决这个问题 | 
-| 2018.08.28 | `Maven` | 如果项目中没有使用到 Maven，但是需要 Maven 包的依赖，可以使用 `Dependency Copy` 的方式将依赖下载 |
+| 时间 |  方案 |
+| --- | --- |
+| 2018.06.06 | `xcode-select error` 的问题， 安装 xcode 就可以解决，并重新设置 `xcode-select` 的路径 | 
+| 2018.06.06 | `npm install` 出现 `error Unexpected end of JSON input`，原因是安装源的内容获取不到(大概是...)，使用淘宝源可以解决这个问题 | 
+| 2018.08.28 | 如果项目中没有使用到 `Maven`，但是需要 Maven 包的依赖，可以使用 `Dependency Copy` 的方式将依赖下载 |
 
 ---
 
@@ -138,7 +138,7 @@ draft: false
 
 ### 2018-05-21 
 
->今天工作的时候大部分时间都在写 Shell， 学习使用 `jq` 命令去操作 Json 文件，学习 `sed` 命令去替换文件的内容。`sed` 还有很多功能，后面慢慢的学习。
+今天工作的时候大部分时间都在写 Shell， 学习使用 `jq` 命令去操作 Json 文件，学习 `sed` 命令去替换文件的内容。`sed` 还有很多功能，后面慢慢的学习。
 
 ### 2018-05-20
 
@@ -163,3 +163,5 @@ draft: false
 ### 2018-05-15
 
 最近比较焦虑，研究 SpaceVim 不小心误删了 vim 的配置，很是沮丧。通过在网上的查找，找到了 Time Machine 时间机器可以回滚某个文件，试用后心情愉快了很多。以后得多多备份才好。
+
+
