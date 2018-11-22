@@ -18,20 +18,15 @@ draft: false
 
 本站 (`Cizel.cn`) 建立于 2016 年 3 月，记录自己的成长，和一些观点和感悟。
 
-## 关于博客
+## 关于我
 
-### 博客系统
+我是施臻，我的英文名是 Cizel。
 
-博客经历了多个系统的迁移, 经历的博客系统有：WordPress、Z-Blog、GitBlog、Typecho。当前使用的博客系统是 Hugo。
+我是一名软件开发工程师，目前就职于小米科技（2016.12 ~ 至今），从事 Go、PHP 后端开发。
 
-迁移的原因如下：
+在空闲的时间，我喜欢上网，看电影， 吃美食。
 
-- 从 WordPress 转到 Z-blog，WordPress 太臃肿，不够简洁; 
-- 从 Z-blog 转到 GitBlog，喜欢上了 Markdown; 
-- 从 GitBlog 转到 Typecho, 简洁，Markdown 支持友好;
-- 从 Typecho 转到 Hugo, 喜欢 Go，并拥抱开源
-
-### 分类说明
+## 关于分类
 
 | 分类 | 内容说明 |
 | --- | --- |
@@ -43,26 +38,10 @@ draft: false
 | PHP语言 | `原创内容` PHP 编程语言开发相关 |
 | Go语言 | `原创内容` Go 编程语言开发相关 |
 
-## 关于我
-
-本人是软件工程专业，使用过的编程语言有：
-
-- C语言
-- C++
-- Java
-- PHP
-- Python
-- Go
-
-本人学过一些简单的安全相关的知识。
-
-目前就职于小米科技（2016.12 - 至今），从事 Go、PHP 相关的开发工作。
-
 ## 各种链接
 
-邮箱：i(at)cizel.cn ( (at) 即 @ )
+邮箱： cizelme@gmail.com
 
 Github: [https://github.com/cizel/][1]
 
-[1]:https://github.com/cizel/
-
+[1]:https://github.com/cizel
