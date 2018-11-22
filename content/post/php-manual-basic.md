@@ -21,6 +21,8 @@ draft: false
 【新认知】强制转换类型用 `settype( mixed $var, string $type )`。判断变量的类型用`is_type `函数。例如：
 
 ```php
+<?php
+
 if (is_int($an_int)) {
     $an_int += 4;
 }
@@ -28,6 +30,7 @@ if (is_string($a_bool)) {
     echo "String: $a_bool";
 }
 ```
+
 **判断变量**
 
 ```php
@@ -42,6 +45,7 @@ is_resource( mixed $var )
 is_scalar( mixed $var ) //检测变量是否是一个标量  integer、float、string 或 boolean
 is_string( mixed $var )
 ```
+
 **判断函数和方法**
 
 ```php
@@ -58,6 +62,7 @@ $str = '0.00';
 $ret = !empty($str):$str:'5.00';
 //output:0.00
 ```
+
 【遇到坑】当字符串 与 数字比较时，会被转换为数字之后进行比较
 
 ```php
@@ -66,6 +71,7 @@ var_dump(0 == 'all'); // TRUE, take care
 ```
 
 ### Integer 整型
+
 【新认知】整型的最大值可以用常量 `PHP_INT_MAX` 表示
 
 【新认知】PHP 没有像 C++ /  JAVA 的整除运算，类似 `1 / 2 `，PHP 返回 float 0.5
@@ -87,12 +93,17 @@ if (abs($a - $b) < $epsilon) {
 ```
 
 ### String 字符串
+
 【新认知】使用函数 `ord()` 和 `chr()` 实现 ASCII 码和字符间的转换（PS:这点和 Python 是一样的）
+
 【新认知】 PHP 中没有单独的“byte”类型，已经用字符串来代替了。
 
 ### Array 数组
+
 【新认知】 `unset()`函数允许删除数组中的某个键，但是数组的键不会重新索引。可以使用 `array_values()` 函数重新索引。
+
 【遇到坑】避免数组 `$foo[bar]` 的写法，使用 `$foo['bar']`
+
 【新认知】如果一个object类型转换为 array，则结果为一个数组，其单元为该对象的属性。键名将为成员变量名，不过有几点例外：整数属性不可访问；私有变量前会加上类名作前缀；保护变量前会加上一个` '*' `做前缀。这些前缀的前后都各有一个 NULL 字符。
 
 ```php
@@ -133,7 +144,6 @@ $binary = (binary)$string;
 $binary = b"binary string";
 ```
 
-
 ## 语言参考 > 变量
 
 ### 变量范围
@@ -157,11 +167,15 @@ function test()
 }
 ?>
 ```
+
 ### 来自PHP外的变量
+
 【新认知】变量名中的点和空格被转换成下划线 例如 `<input name="a.b" />` 变成 `$_REQUEST["a_b"]`
 
 ## 语言参考 > 流程控制
+
 ### foreach
+
 【新认知】用list()为嵌套数组解包
 
 ```php
@@ -180,15 +194,18 @@ foreach ($array as list($a, $b)) {
 ```
 
 ### break
+
 【新认知】break 可以接受一个可选的数字参数来决定跳出几重循环。```break```  相当于 ```break 1```
 
 ### continue
+
 【新认知】continue 可以接受一个可选的数字参数来决定跳到几重循环结尾。```continue```  相当于 ```continue 1```
 
 
 ## 语言参考 > 常量
 
 ### 魔术常量
+
 【新认知】原来这些变量叫做 魔法常量
 ```php
 __LINE __
@@ -200,9 +217,11 @@ __TARIT__
 __MRTHOD__
 __NAMESPACE__
 ```
+
 ## 语言参考 > 类与对象
 
 ### 基本概念
+
 【新认知】::class, 使用ClassName::class 可以获得一个字符串，包含命名空间
 
 ```php
@@ -223,6 +242,7 @@ namespace NS {
 【新认知】可以用一个变量来动态调用类，但该变量的值不能为关键词（self, parent, static）。
 
 ### 魔术方法
+
 【新认知】不能在__toString() 方法中抛出异常，这样会出现致命错误。
 
 ### 类型约束
@@ -279,7 +299,9 @@ foreach ($generator as $value) {
 2
 3
 ```
+
 ## 语言参考 >  预定义变量
+
 ### 超全局变量
 
 ```php
@@ -298,7 +320,4 @@ $http_response_header //HTTP Response Header
 $argc //argument numbers
 $argv //argument array
 ```
-
-
-以上
 
