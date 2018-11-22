@@ -1,8 +1,8 @@
 ---
 title: "Shell 入门教程"
 
-date: 2018-05-18T12:38:57+08:00
-lastmod: 2018-11-21T23:47:03+08:00
+date: 2018-05-18
+lastmod: 2018-11-21
 
 keywords: ["Linux", "Shell", "Shell Script"]
 
@@ -404,9 +404,9 @@ test ! "1" = "2"; echo $?
 Shell 中的选择语句和其他编程语言类似，支持 if, if-else, if-elif, if-elif-else, case-esac 常见的条件选择方式
 
 > 可能的坑：
-
-> 1. if 条件的左括号 (`[`) 后必须有一个空格，右括号前 (`]`) 必须有一个空格。if [<kbd>空格</kbd>expression<kbd>空格</kbd>]
-> 2. if, elif 后面都需要加 `then` 然后添加语句
+>
+> - if 条件的左括号 (`[`) 后必须有一个空格，右括号前 (`]`) 必须有一个空格。if [<kbd>空格</kbd>expression<kbd>空格</kbd>]
+> - if, elif 后面都需要加 `then` 然后添加语句
 
 ### if 选择
 

@@ -1,7 +1,7 @@
 ---
 title: "数学建模笔记总结"
-date: 2016-06-16T23:41:22+08:00
-lastmod: 2016-06-16T23:41:22+08:00
+date: 2016-06-16
+lastmod: 2016-06-16
 draft: true
 keywords: ["数学建模", "matlab"]
 tags: ["数学建模", "matlab"]
