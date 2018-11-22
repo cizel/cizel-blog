@@ -320,4 +320,3 @@ $http_response_header //HTTP Response Header
 $argc //argument numbers
 $argv //argument array
 ```
-

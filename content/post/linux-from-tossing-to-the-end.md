@@ -68,5 +68,3 @@ Linux 桌面系统还是存在着很多的问题，特别是某些程序的不�
 暂时先回到 Windows，等自己挣到 MacBook 的钱，就换MacBook Pro，从此 Windows 是路人。
 
 > 现在已经使用 MacBook Pro
-
-

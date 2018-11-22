@@ -580,5 +580,3 @@ echo 123
 - [linux shell 字符串操作（长度，查找，替换）详解](https://www.cnblogs.com/chengmo/archive/2010/10/02/1841355.html)
 - [linux shell 正则表达式 (BREs,EREs,PREs) 差异比较](https://www.cnblogs.com/chengmo/archive/2010/10/10/1847287.html)
 - [Shell 风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/google-shell-styleguide/contents/)
-
-

@@ -64,8 +64,3 @@ draft: false
 ```javascript
 javascript:(function(){var done=false;var length=document.getElementById('zhuti').contentWindow.document.getElementById('pjkc').getElementsByTagName('option').length;var count=0;try{var setAll=function(){var selects=document.getElementById('zhuti').contentWindow.document.getElementsByClassName('datelist')[0].getElementsByTagName('select');var randI=Math.floor(Math.random()*8);for(var i=0;i<selects.length;i++){if(i==randI){selects[i].value='%E8%89%AF%E5%A5%BD'}else{selects[i].value='%E4%BC%98%E7%A7%80'}}};var submitData=function(){if(done)return;if(count>=length){console.log('all done, have fun!');done=true;document.getElementById('zhuti').contentWindow.document.getElementById('Button2').click();return}count++;document.getElementById('zhuti').contentWindow.document.getElementById('Button1').click()};document.getElementById('zhuti').addEventListener('load',function(){setAll();submitData()});setAll();submitData()}catch(e){done=true}})();
 ```
-
-
-
-
-
