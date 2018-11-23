@@ -13,7 +13,9 @@ categories: ["网络安全"]
 draft: false
 ---
 
-Cizel在几天前，参加了i春秋，腾讯实习30强挑战赛，得到了26名的成绩，总分1721分。PWN的 writeup 和逆向的 writeup 没有。
+在几天前，参加了i春秋举办的《NextOne 安全勇士30强诞生赛》，以总分1721，取得了26名的成绩。获得了腾讯安全平台部学习的机会。
+
+这篇文章的内容是30强诞生赛的解题方式（Writeup)。
 
 <!--more-->
 
@@ -812,3 +814,5 @@ root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/sbin/nologin daemon:x:2:2:da
 经过观察，找到Flag文件在C盘的根目录下，一个为Flag.txt的文件，下载后获取flag
 
 渗透测试完
+
+
