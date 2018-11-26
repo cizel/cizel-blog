@@ -9,12 +9,11 @@ keywords: ["学习编程"]
 tags: ["学习编程", "Teach Yourself"]
 categories: ["剪贴板"]
 
-draft: true
+draft: false
 ---
 
-耗子叔问：“你先问问自己有没有花十年磨一剑的决心”。
 
-耗子叔在《左耳听风》程序员练级攻略的开篇，推荐了[《Teach Yourself Programming in Ten Years》](http://norvig.com/21-days.html)这篇文章。
+耗子叔在《左耳听风》程序员练级攻略中推荐了[《Teach Yourself Programming in Ten Years》](http://norvig.com/21-days.html)这篇文章。
 
 我看了这篇文章，已经下定决心要花十年磨一剑。
 
@@ -40,12 +39,15 @@ draft: true
 
 > Teach Yourself: In 24 hours you won’t have time to write several significant programs, and learn from your successes and failures with them. You won’t have time to work with an experienced programmer and understand what it is like to live in a C++ environment. In short, you won’t have time to learn much. So the book can only be talking about a superficial familiarity, not a deep understanding. As Alexander Pope said, a little learning is a dangerous thing.
 
-自学: 24小时之内，你没有时间写几个有意义的程序，也就无法从成功或失败中学到经验。24小时之内，你没有时间和一个有经验的程序员合作交流，也就无从理解使用C++编程的真实场景。简单来说，时间太短，你啥也学不到。因此，有这种干货标题的速成书，只是让你走马观花的瞧一下，绝非深入的理解。18世纪的英国诗人亚历山大·蒲柏[……1]曾说过：“一知半解”是一件危险的事情。[……1]：这个哥哥还给牛顿写了最出名的墓志铭之一：“自然和自然律隐没在黑暗中；上帝说，让牛顿去吧！遂一片光明。”
+自学: 24小时之内，你没有时间写几个有意义的程序，也就无法从成功或失败中学到经验。24小时之内，你没有时间和一个有经验的程序员合作交流，也就无从理解使用C++编程的真实场景。简单来说，时间太短，你啥也学不到。因此，有这种干货标题的速成书，只是让你走马观花的瞧一下，绝非深入的理解。18世纪的英国诗人亚历山大·蒲柏曾说过：“一知半解”是一件危险的事情。
+
 
 > C++: In 24 hours you might be able to learn some of the syntax of C++ (if you already know another language), but you couldn’t learn much about how to use the language. In short, if you were, say, a Basic programmer, you could learn to write programs in the style of Basic using C++ syntax, but you couldn’t learn what C++ is actually good (and bad) for. So what’s the point? Alan Perlis once said: “A language that doesn’t affect the way you think about programming, is not worth knowing”. One possible point is that you have to learn a tiny bit of C++ (or more likely, something like JavaScript or Processing) because you need to interface with an existing tool to accomplish a specific task. But then you’re not learning how to program; you’re learning to accomplish that task.
 
 C++: (如果你有一定的编程基础)，在24小时之内，能学会一些C++的语法，但是，仅此而已了。如果你以前是个Basic语言的程序员，你可以写一些语法是C++，但是风格是Basic的程序，但是，24小时之内，C++语言的精华或糟粕，你都学不到。重点是什么？(首界图灵奖得主)Alan Perlis曾说过：“不能影响你编程思维方式的语言，是不值得学习的。”一个更加可能的场景是，在工作中，你不得不学习C++（或者JavaScript，Processing之类）的一小部分，来调用一些原有的接口，完成某个特定的任务。这种情况下，表面上说是在学习如何编程，其实只是在应付一下手上的活。
-in 24 Hours: Unfortunately, this is not enough, as the next section shows.
+
+> in 24 Hours: Unfortunately, this is not enough, as the next section shows.
+
 24小时内:很不幸，24小时太少了，原因下面告诉你。
 
 
@@ -132,4 +134,3 @@ in 24 Hours: Unfortunately, this is not enough, as the next section shows.
 > So go ahead and buy that Java/Ruby/Javascript/PHP book; you’ll probably get some use out of it. But you won’t change your life, or your real overall expertise as a programmer in 24 hours or 21 days. How about working hard to continually improve over 24 months? Well, now you’re starting to get somewhere…
 
 所以，尽管买本 Java/Ruby/Javascript/PHP 的书吧。你可能会从中学到点儿有用的东西。但作为一个程序员，在 21 天内或 24 小时内改变你的人生，或者提高你实际的编程水平，这是不可能的。你尝试过连续 24 个月不间断的努力提高自己么？好吧，好吧，你该上路了……
-

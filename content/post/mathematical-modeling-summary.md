@@ -2,7 +2,7 @@
 title: "数学建模部分模型代码示例"
 date: 2016-06-16
 lastmod: 2016-06-16
-draft: true
+draft: false
 keywords: ["数学建模", "matlab"]
 tags: ["数学建模", "matlab"]
 categories: ["观点与感悟"]
