@@ -57,7 +57,8 @@ draft: false
 | 2018.11.22 | `jsdelivr` | [jsdelivr](https://www.jsdelivr.com) 优秀的前端cdn镜像 |
 | 2018.11.28 | `Manjaro` | Manjaro 是一款基于 Arch Linux，对用户友好的 Linux 发行版本 |
 | 2018.11.28 | `RSSHub` | RSSHub 是一个轻量、易于扩展的 RSS 生成器, 可以给任何奇奇怪怪的内容生成 RSS 订阅源（万物皆可 RSS） |
-
+| 2018.11.28 | `Privoxy` | 可以将 Socket5 转化成 HTTP 代理的工具 |
+| 2018.11.28 | `wrk` | 现代化的 HTTP 压测工具 |
 ---
 
 ## 认知迭代
