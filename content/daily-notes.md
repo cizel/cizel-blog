@@ -55,6 +55,8 @@ draft: false
 | 2018.09.05 | `v2ray` | 类似于 `ss` 的软件， 也是一种不错解决方案 |
 | 2018.11.05 | `hey` | `ab` 压测工具的替代品 |
 | 2018.11.22 | `jsdelivr` | [jsdelivr](https://www.jsdelivr.com) 优秀的前端cdn镜像 |
+| 2018.11.28 | `Manjaro` | Manjaro 是一款基于 Arch Linux，对用户友好的 Linux 发行版本 |
+| 2018.11.28 | `RSSHub` | RSSHub 是一个轻量、易于扩展的 RSS 生成器, 可以给任何奇奇怪怪的内容生成 RSS 订阅源（万物皆可 RSS） |
 
 ---
 
