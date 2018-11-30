@@ -6,7 +6,7 @@ lastmod: 2018-11-22
 
 keywords: ['Flag', '记录']
 
-tags: ["Flag", "记录", "工具记录", ""]
+tags: ["Flag", "记录", "工具记录"]
 categories: ["观点与感想"]
 
 draft: false
