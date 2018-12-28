@@ -82,7 +82,8 @@ draft: false
 | --- | --- |
 | 2018.06.06 | `xcode-select error` 的问题， 安装 xcode 就可以解决，并重新设置 `xcode-select` 的路径 | 
 | 2018.06.06 | `npm install` 出现 `error Unexpected end of JSON input`，原因是安装源的内容获取不到(大概是...)，使用淘宝源可以解决这个问题 | 
-| 2018.08.28 | 如果项目中没有使用到 `Maven`，但是需要 Maven 包的依赖，可以使用 `Dependency Copy` 的方式将依赖下载 |
+| 2018.08.28 | 如果项目中没有使用到 `maven`，但是需要 maven 包的依赖，可以使用 `dependency copy` 的方式将依赖下载 |
+| 2018.12.28 | makefile 出现 `makefile:2: *** missing separator. Stop.`，原因是 makefile 必须使用 tab 开头 |
 
 ---
 
