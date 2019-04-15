@@ -26,11 +26,14 @@ draft: false
 
 - k8s
 - istio
+- Nexus3.x: Docker 管理仓库
+- Harbor: Docker 管理仓库
 
 **监控体系**
 
 - [netData](https://github.com/netdata/netdata)
 - [open-falcon](https://github.com/open-falcon/falcon-plus)
+- [pydash](https://github.com/dgilland/pydash)
 
 **日志体系**
 
