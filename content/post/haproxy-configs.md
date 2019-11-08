@@ -381,4 +381,18 @@ backend stats
     server denlai2 10.6.6.104:80 check inter 1500 rise 3 fall 3
 ```
 
-转载自: http://xstarcd.github.io/wiki/sysadmin/haproxy_confs.html
+## 常见问题
+
+如果要用 brew services 后台运行 haproxy，一定不要把 haproxy 自身配置成 daemon 运行。如果在配置文件中有这句配置：
+
+```
+global
+#     daemon
+```
+
+而你又用brew services后台自动运行，那么会发现隔几分钟haproxy就会生成一个新的进程，直到耗尽系统资源。
+
+## 参考
+
+- [HAProxy基础](https://www.wanglibing.com/2018/10/26/HAProxy%E5%9F%BA%E7%A1%80/)
+- [haproxy配置范例](http://xstarcd.github.io/wiki/sysadmin/haproxy_confs.html)
