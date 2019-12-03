@@ -55,6 +55,7 @@ draft: false
 | 2019.03.12 | `hexyl` | 命令行 Hex 查看器 |
 | 2019.10.23 | `manjaro` | 基于 ArchLinux 带界面的发行版【推荐尝试】 |
 | 2019.10.23 | `vuepress` | 构建和编写和 vuejs 一样的文档 |
+| 2019.12.03 | `logrotate` | 用于做日志分割的脚本，一般配合 crontab 使用 |
 ---
 
 ## 认知迭代
