@@ -70,6 +70,7 @@ draft: false
 | 时间 |  方案 |
 | --- | --- |
 | 2019.11.27 | docker 获取宿主机IP的方式：/sbin/ip route|awk '/default/ { print $3 }', 或者 `host.docker.internal` [link](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) |
+| 2019.12.16 | mac 没有声音的处理方法：打开 `activity monitor` 输入 `audio`, 杀死 `coreaudiod` 进程 | 
 
 ---
 
