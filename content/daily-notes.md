@@ -54,10 +54,7 @@ draft: false
 
 | 时间 | 工具 | 说明 |
 | --- | --- | --- |
-| 2019.03.12 | `hexyl` | 命令行 Hex 查看器 |
-| 2019.10.23 | `manjaro` | 基于 ArchLinux 带界面的发行版【推荐尝试】 |
-| 2019.10.23 | `vuepress` | 构建和编写和 vuejs 一样的文档 |
-| 2019.12.03 | `logrotate` | 用于做日志分割的脚本，一般配合 crontab 使用 |
+| 2020.02.13 | `暂无` | 暂无 |
 ---
 
 ## 认知迭代
@@ -71,8 +68,7 @@ draft: false
 
 | 时间 |  方案 |
 | --- | --- |
-| 2019.11.27 | docker 获取宿主机IP的方式：/sbin/ip route|awk '/default/ { print $3 }', 或者 `host.docker.internal` [link](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) |
-| 2019.12.16 | mac 没有声音的处理方法：打开 `activity monitor` 输入 `audio`, 杀死 `coreaudiod` 进程 | 
+| 2020.02.13 | 暂无 | 
 
 ---
 
