@@ -15,6 +15,7 @@ draft: false
 ## 往年记录
 
 - [2018 日常记录](/post/2018-daily-notes/)  
+- [2019 日常记录](/post/2019-daily-notes/)  
 
 ## Flag 记录
 
