@@ -19,7 +19,7 @@ draft: false
 
 ## Flag 记录
 
-- 使用 SpaceVim 持续学习 Vim 的技巧, 为期一个月(暂时不学emacs了哦)
+-  暂无
 
 ## 我的架构体系
 
