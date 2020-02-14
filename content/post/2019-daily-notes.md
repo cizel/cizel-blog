@@ -2,7 +2,7 @@
 title: "2019 总结记录"
 
 date: 2020-02-12
-lastmod: 2020-02-13
+lastmod: 2020-02-12
 
 keywords: ['Flag', '日常记录', '记录']
 
