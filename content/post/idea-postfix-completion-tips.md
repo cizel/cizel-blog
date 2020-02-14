@@ -1,8 +1,8 @@
 ---
 title: "IDEA Postfix Completion 补全小技巧"
 
-date: 2019-09-12
-lastmod: 2019-09-12
+date: 2020-02-13
+lastmod: 2020-02-13
 
 keywords: ["postfix", "学习笔记"]
 
