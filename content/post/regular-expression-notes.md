@@ -91,4 +91,6 @@ draft: false
 
 ## 附录
 
+- [learn-regex](https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md)
+
 ![](https://static.cizel.cn/2018-05-10-15258827792876.jpg)
