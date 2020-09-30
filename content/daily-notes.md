@@ -14,8 +14,8 @@ draft: false
 
 ## 往年记录
 
-- [2018 日常记录](/post/2018-daily-notes/)  
-- [2019 日常记录](/post/2019-daily-notes/)  
+- [2018 日常记录](/post/2018-daily-notes/) 
+- [2019 日常记录](/post/2019-daily-notes/) 
 
 ## Flag 记录
 
@@ -54,7 +54,7 @@ draft: false
 
 | 时间 | 工具 | 说明 |
 | --- | --- | --- |
-| 2020.02.13 | `暂无` | 暂无 |
+| 2020.09.30 | `qtile` | linux/unix 桌面管理器，使用 Python 编写 |
 ---
 
 ## 认知迭代
