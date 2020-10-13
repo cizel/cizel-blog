@@ -56,6 +56,8 @@ draft: false
 | 时间 | 工具 | 说明 |
 | --- | --- | --- |
 | 2020.09.30 | `qtile` | linux/unix 桌面管理器，使用 Python 编写 |
+| 2020.10.13 | `gh-ost` | GitHub's online schema migration for MySQL |
+
 ---
 
 ## 认知迭代
