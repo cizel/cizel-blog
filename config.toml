@@ -9,10 +9,12 @@ defaultContentLanguage = "zh-cn"
 paginate = 20
 
 pygmentsStyle = "b2"
+pygmentsOptions = "linenos=table"
 pygmentsCodeFences = true
+#pygmentsUseClasses = true
+pygmentscodefencesguesssyntax = true
+pluralizelisttitles = false
 pygmentsCodeFencesGuessSyntax = true
-
-disqusShortname = ""
 
 [params]
     author = "Cizel"
@@ -30,14 +32,14 @@ disqusShortname = ""
     dateFormat = "January 2, 2006"
 
     hideFooter = false
-    hideCredits = false
-    hideCopyright = true
+    hideCredits = true
+    hideCopyright = false
 
     since = 2016
 
     # Git Commit in Footer, uncomment the line below to enable it.
     #commit = "https://github.com/cizel/cizel-blog/tree/"
-
+    
     rtl = false
 
     # Specify light/dark colorscheme
