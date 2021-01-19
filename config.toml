@@ -1,170 +1,119 @@
-baseURL = "https://www.cizel.cn/"
+baseURL = "https://www.cizel.cn"
+title = "Cizel's blog"
+
+theme = "hugo-coder"
+
 languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "Cizel's Blog - To be a very good person."
-enableRobotsTXT = true
-enableEmoji = true
-theme = "even"
+defaultContentLanguage = "zh-cn"
 
-# Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
-pygmentsOptions = "linenos=table"
-pygmentsCodefences = true
-pygmentsUseClasses = true
-pygmentsCodefencesGuessSyntax = true
+paginate = 20
 
-hasCJKLanguage = false     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 6                                              # 首页每页显示的文章数
-disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+pygmentsStyle = "b2"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 
-[author]                  # essential                     # 必需
-  name = "Cizel"
-
-[sitemap]                 # essential                     # 必需
-  changefreq = "weekly"
-  priority = 0.5
-  filename = "sitemap.xml"
-
-[[menu.main]]             # config your menu              # 配置目录
-  name = "首页"
-  weight = 10
-  identifier = "home"
-  url = "/"
-
-[[menu.main]]
-  name = "归档"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
-
-[[menu.main]]
-  name = "记录"
-  weight = 30
-  identifier = "daily-notes"
-  url = "/daily-notes/"
-
-[[menu.main]]
-  name = "关于"
-  weight = 40
-  identifier = "about"
-  url = "/about/"
+disqusShortname = ""
 
 [params]
-  version = "4.x"           # Used to give a friendly message when you have an incompatible update
-  debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+    author = "Cizel"
+    info = "To be a very good person."
+    description = "John Doe's personal website"
+    keywords = "blog,developer,personal"
 
-  since = "2016"            # Site creation time          # 站点建立时间
+    avatarURL = "images/author.jpg"
+    favicon_32 = "favicon-32x32.png"
+    favicon_16 = "favicon-16x16.png"
+    touchIcon = "apple-touch-icon.png"
 
-  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Cizel's Blog"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Blog", "Cizel的博客", "Cizel", "PHP", "Go"]
-  description = "爱编程，爱生活 - Cizel.cn"
+    footercontent = "东隅已逝，桑榆非晚"
 
-  # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archivePaginate = 30
+    dateFormat = "January 2, 2006"
 
-  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
-  dateFormatToUse = "2006-01-02"
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = true
 
-  # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = true
+    since = 2016
 
-  # Syntax highlighting by highlight.js
-  highlightInClient = false
+    # Git Commit in Footer, uncomment the line below to enable it.
+    #commit = "https://github.com/cizel/cizel-blog/tree/"
 
-  # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
-  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-  toc = false                                                                           # 是否开启目录
-  autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
-  fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
+    rtl = false
 
-  # mathjax
-  mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-  mathjaxEnableSingleDollar = false                                                     # 是否使用 $...$ 即可進行inline latex渲染
-  mathjaxEnableAutoNumber = false                                                       # 是否使用公式自动编号
-  mathjaxUseLocalFiles = false  # You should install mathjax in `yout-site/static/lib/mathjax`
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorScheme = "light"
 
-  postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
-  linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
-  contentCopyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.zh"><i class="fa fa-creative-commons"></i> 署名-非商业性使用 4.0 国际 </a>'     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+    # Hide the toggle button, along with the associated vertical divider
+    hideColorSchemeToggle = true
 
-  changyanAppid = ""        # Changyan app id             # 畅言
-  changyanAppkey = ""       # Changyan app key
+    # Series see also post count
+    maxSeeAlsoItems = 5
 
-  livereUID = ""            # LiveRe UID                  # 来必力
+    # Enable Twemoji
+    enableTwemoji = true
 
-  baidu_push = false        # baidu push                  # 百度
-  baidu_analytics = ""      # Baidu Analytics
-  baidu_verification = ""   # Baidu Verification
-  google_verification = ""  # Google_Verification         # 谷歌
+    # Custom CSS
+    customCSS = []
 
-  # Link custom CSS and JS assets
-  #   (relative to /static/css and /static/js respectively)
-  customCSS = []
-  customJS = []
+    # Custom SCSS
+    customSCSS = []
 
-  [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-    enable = true
-    jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
-    slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
-    fancyboxJS = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
-    fancyboxCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
-    timeagoJS = '<script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>'
-    timeagoLocalesJS = '<script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>'
-    flowchartDiagramsJS = '<script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script>'
-    sequenceDiagramsCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">'
-    sequenceDiagramsJS = '<script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>'
+    # Custom JS
+    customJS = []
 
-  # Display a message at the beginning of an article to warn the readers that it's content may be outdated.
-  # 在文章开头显示提示信息，提醒读者文章内容可能过时。
-  [params.outdatedInfoWarning]
-    enable = false
-    hint = 30               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
-    warn = 180              # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+#[params.fathomAnalytics]
+#    siteID = "ABCDE"
+#    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+#    serverURL = "analytics.example.com"
 
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-    owner = "cizel"              # Your GitHub ID
-    repo = "cizel-blog"               # The repo to store comments
-    clientId = "33532f4ec0b513251b74"           # Your client ID
-    clientSecret = "c32af5d88d01e52d5b0543336c1a877e1ecbe179"       # Your client secret
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+#[params.plausibleAnalytics]
+#    domain = "example.com"
+#    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+#    serverURL = "analytics.example.com"
 
-  [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
-    enable = false
-    options = ""
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+#[params.goatCounter]
+#    code = "code"
 
-  [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
-    enable = false
-    options = ""            # default: "{theme: 'simple'}"
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+#[params.cloudflare]
+#    token = "token"
 
-  [params.busuanzi]         # count web traffic by busuanzi                             # 是否使用不蒜子统计站点访问量
-    enable = false
-    siteUV = true
-    sitePV = true
-    pagePV = true
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
 
-  [params.reward]                                         # 文章打赏
-    enable = false
-    wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
-    alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github"
+    weight = 1
+    url = "https://github.com/cizel/"
+[[params.social]]
+    name = "RSS"
+    icon = "fa fa-rss"
+    weight = 6
+    url = "https://www.cizel.cn/index.xml"
+    rel = "alternate"
+    type = "application/rss+xml"
 
-  [params.social]                                         # 社交链接
-    g-github = "https://github.com/cizel"
 
-# 将下面这段配置取消注释可以使 hugo 生成 .md 文件
-# Uncomment these options to make hugo output .md files.
-#[mediaTypes]
-#  [mediaTypes."text/plain"]
-#    suffix = "md"
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
+[[menu.main]]
+    name = "关于"
+    weight = 1
+    url = "/about/"
+[[menu.main]]
+    name = "博客"
+    weight = 2
+    url  = "/post/"
+[[menu.main]]
+    name = "日常记录"
+    weight = 3
+    url  = "/daily-notes/"
