@@ -39,7 +39,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   url = "/post/"
 
 [[menu.main]]
-  name = "日常"
+  name = "记录"
   weight = 30
   identifier = "daily-notes"
   url = "/daily-notes/"
@@ -57,7 +57,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   since = "2016"            # Site creation time          # 站点建立时间
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Cizel Blog"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Cizel's Blog"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Blog", "Cizel的博客", "Cizel", "PHP", "Go"]
   description = "爱编程，爱生活 - Cizel.cn"
 
@@ -122,13 +122,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     enable = false
     hint = 30               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
     warn = 180              # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
-
-
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = "cizel"              # Your GitHub ID
