@@ -1,5 +1,5 @@
 baseURL = "https://www.cizel.cn"
-title = "Cizel's blog"
+title = "和西泽一起成长"
 
 theme = "hugo-coder"
 
@@ -11,16 +11,15 @@ paginate = 20
 pygmentsStyle = "b2"
 pygmentsOptions = "linenos=table"
 pygmentsCodeFences = true
-#pygmentsUseClasses = true
 pygmentscodefencesguesssyntax = true
 pluralizelisttitles = false
 pygmentsCodeFencesGuessSyntax = true
 
 [params]
-    author = "Cizel"
-    info = "To be a very good person."
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
+    author = "西泽"
+    info = "技术 \\ 成长 \\ 生活"
+    description = "爱编程，爱生活 - Cizel.cn"
+    keywords = "Cizel, Cizel Blog, 西泽, 一起成长, 程序员成长, 和西泽一起成长"
 
     avatarURL = "images/author.jpg"
     favicon_32 = "favicon-32x32.png"
@@ -33,7 +32,7 @@ pygmentsCodeFencesGuessSyntax = true
 
     hideFooter = false
     hideCredits = true
-    hideCopyright = false
+    hideCopyright = true
 
     since = 2016
 
@@ -102,20 +101,20 @@ pygmentsCodeFencesGuessSyntax = true
     name = "RSS"
     icon = "fa fa-rss"
     weight = 6
-    url = "https://www.cizel.cn/index.xml"
+    url = "/index.xml"
     rel = "alternate"
     type = "application/rss+xml"
 
 
 [[menu.main]]
-    name = "关于"
+    name = "文章"
     weight = 1
-    url = "/about/"
-[[menu.main]]
-    name = "博客"
-    weight = 2
     url  = "/post/"
 [[menu.main]]
-    name = "日常记录"
+    name = "记录"
     weight = 3
     url  = "/daily-notes/"
+[[menu.main]]
+    name = "关于"
+    weight = 5
+    url = "/about/"
