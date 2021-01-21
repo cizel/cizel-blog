@@ -66,7 +66,6 @@ pygmentsCodeFencesGuessSyntax = true
     # Custom JS
     customJS = []
 
-
 [params.utterances]
   repo = "cizel/blog-comments" # https://utteranc.es/#heading-repository
   issueTerm = "title" # https://utteranc.es/#heading-mapping
@@ -116,7 +115,7 @@ pygmentsCodeFencesGuessSyntax = true
 [[menu.main]]
     name = "文章"
     weight = 1
-    url  = "/post/"
+    url  = "/posts/"
 [[menu.main]]
     name = "记录"
     weight = 3
