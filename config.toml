@@ -17,8 +17,8 @@ pygmentsCodeFencesGuessSyntax = true
 
 [params]
     author = "西泽"
-    info = "技术 \\ 成长 \\ 生活"
-    description = "爱编程，爱生活 - Cizel.cn"
+    info = "编程 / 安全 / 写作"
+    description = "爱编程，爱破解，爱写作 - Cizel.cn"
     keywords = "Cizel, Cizel Blog, 西泽, 一起成长, 程序员成长, 和西泽一起成长"
 
     avatarURL = "images/author.jpg"
@@ -28,7 +28,7 @@ pygmentsCodeFencesGuessSyntax = true
 
     footercontent = "东隅已逝，桑榆非晚"
 
-    dateFormat = "January 2, 2006"
+    dateFormat = "2006-01-02"
 
     hideFooter = false
     hideCredits = true
@@ -113,13 +113,9 @@ pygmentsCodeFencesGuessSyntax = true
 
 
 [[menu.main]]
-    name = "文章"
+    name = "博客"
     weight = 1
     url  = "/posts/"
-[[menu.main]]
-    name = "记录"
-    weight = 3
-    url  = "/daily-notes/"
 [[menu.main]]
     name = "关于"
     weight = 5

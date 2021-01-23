@@ -9,7 +9,7 @@ keywords: ["Linux", "感想", "折腾"]
 tags: ["Linux", "感想", "折腾"] 
 categories: ["观点与感想"]
 
-draft: false
+draft: true
 ---
 
 之前一直使用的是 Windows & Linux 的双系统。但是脑袋里面一直有一种声音：“别再用双系统了，再给自己用 Windows 的退路，什么都不会学会”。

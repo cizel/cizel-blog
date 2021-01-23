@@ -9,7 +9,7 @@ keywords: ["正方教务", "一键评价"]
 tags: ["正方教务", "一键评价"]
 categories: ["剪贴板"]
 
-draft: false
+draft: true
 ---
 
 代码来着网络，经过修复可以正常的完成一件评教功能。

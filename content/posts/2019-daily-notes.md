@@ -9,7 +9,7 @@ keywords: ['Flag', '日常记录', '记录']
 tags: ["Flag", "记录", "工具记录", "学习记录"]
 categories: ["观点与感想"]
 
-draft: false
+draft: true
 ---
 
 2019 年过的很快，这一年换了新组也换了语言，有很大的力气都是在学习Java 相关的知识。

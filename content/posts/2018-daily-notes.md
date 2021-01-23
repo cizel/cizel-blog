@@ -9,7 +9,7 @@ keywords: ['Flag', '日常记录', '记录']
 tags: ["Flag", "记录", "工具记录", "学习记录"]
 categories: ["观点与感想"]
 
-draft: false
+draft: true
 ---
 
 这是一篇是对 2018 年的总结记录。2018 年收获很多，2019 年仍需努力。
