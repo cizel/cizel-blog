@@ -6,7 +6,7 @@ lastmod: 2018-11-21
 
 keywords: ["正则", "正则表达式", "使用指南"]
 
-tags: ["正则", "正则表达式", "使用指南"]
+tags: ["正则表达式"]
 categories: ["开发者手册"]
 
 draft: false

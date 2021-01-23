@@ -21,7 +21,7 @@ draft: false
 
 ## 基本信息
 
-> 网站名称：Cizel's Blog
+> 网站名称：和西泽一起成长
 >
 > 网站地址：www.cizel.cn
 >

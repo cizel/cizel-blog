@@ -6,8 +6,8 @@ lastmod: 2018-11-23
 
 keywords: ["学习编程"]
 
-tags: ["学习编程", "Teach Yourself"]
-categories: ["剪贴板"]
+tags: ["学习方法论"]
+categories: ["转载"]
 
 draft: false
 ---

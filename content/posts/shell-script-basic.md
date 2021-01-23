@@ -1,12 +1,12 @@
 ---
-title: "Shell 入门教程"
+title: "Shell 常用语法手册"
 
 date: 2018-05-18
 lastmod: 2018-11-21
 
 keywords: ["Linux", "Shell", "Shell Script"]
 
-tags: ["Linux", "Shell", "Shell Script"]
+tags: ["Linux", "Shell"]
 categories: ["开发者手册"]
 
 draft: false

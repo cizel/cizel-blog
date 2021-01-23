@@ -6,8 +6,8 @@ lastmod: 2019-09-12
 
 keywords: ["haproxy", "学习笔记"]
 
-tags: ["haproxy"]
-categories: ["剪贴板"]
+tags: ["Haproxy"]
+categories: ["开发者手册"]
 
 draft: false
 ---

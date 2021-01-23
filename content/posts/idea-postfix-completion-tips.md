@@ -6,7 +6,7 @@ lastmod: 2020-02-13
 
 keywords: ["postfix", "学习笔记"]
 
-tags: ["postfix"]
+tags: ["IDEA"]
 categories: ["开发者手册"]
 
 draft: false

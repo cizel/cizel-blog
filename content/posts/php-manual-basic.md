@@ -6,8 +6,8 @@ lastmod: 2018-11-21
 
 keywords: ["PHP", "学习笔记"]
 
-tags: ["PHP", "学习笔记"]
-categories: ["PHP语言"]
+tags: ["PHP 语言"]
+categories: ["学习笔记"]
 
 draft: false
 ---

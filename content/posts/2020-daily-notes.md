@@ -1,5 +1,5 @@
 ---
-title: "日常记录"
+title: "2020 日常记录"
 
 date: 2018-05-16
 lastmod: 2018-11-22
@@ -9,7 +9,7 @@ keywords: ['Flag', '记录']
 tags: ["Flag", "记录", "工具记录"]
 categories: ["观点与感想"]
 
-draft: false
+draft: true
 ---
 
 ## 往年记录
