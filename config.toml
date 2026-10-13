@@ -28,9 +28,8 @@ pygmentsCodeFencesGuessSyntax = true
 
     footercontent = "东隅已逝，桑榆非晚"
 
-    # ICP 备案号。仓库中没有网站序号后缀，使用主备案号。
-    # 页脚模板将其渲染为指向工信部备案查询的链接。
-    beian = "鄂ICP备16010857号"
+    # 网站备案号，含网站序号 -1。页脚模板将其渲染为指向工信部备案查询的链接。
+    beian = "鄂ICP备16010857号-1"
 
     dateFormat = "2006-01-02"
 

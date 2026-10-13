@@ -4,9 +4,8 @@
       {{ with .Site.Params.footerContent | safeHTML }}
         <p>{{ . }}</p>
       {{ end }}
-      {{ with .Site.Params.beian }}
-        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">{{ . }}</a></p>
-      {{ end }}
+      {{ $beian := or .Site.Params.beian "鄂ICP备16010857号-1" }}
+      <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">{{ $beian }}</a></p>
       {{ if not .Site.Params.hideCopyright }}
         ©
         {{ if (and (.Site.Params.since) (lt .Site.Params.since now.Year)) }}
