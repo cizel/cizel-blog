@@ -1,20 +1,22 @@
 #!/bin/sh
+# Install a known Hugo and build the site. Does not clone themes.
 set -eu
 
-if ! command -v hugo >/dev/null 2>&1; then
-  hugo_version=0.139.4
-  case "$(uname -m)" in
-    aarch64|arm64) hugo_arch=arm64 ;;
-    *) hugo_arch=amd64 ;;
-  esac
-  tmp="$(mktemp -d)"
-  curl -fsSL -o "$tmp/hugo.tar.gz" \
-    "https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_extended_${hugo_version}_linux-${hugo_arch}.tar.gz"
-  tar -xzf "$tmp/hugo.tar.gz" -C "$tmp" hugo
-  mv "$tmp/hugo" /tmp/hugo
-  chmod +x /tmp/hugo
-  export PATH="/tmp:${PATH}"
-fi
+hugo_version=0.168.0
+case "$(uname -m)" in
+  aarch64|arm64) hugo_arch=arm64 ;;
+  *) hugo_arch=amd64 ;;
+esac
 
-hugo version
-hugo --gc
+bindir="${HOME}/.local/bin"
+mkdir -p "$bindir"
+url="https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_extended_${hugo_version}_linux-${hugo_arch}.tar.gz"
+tmp="$(mktemp -d)"
+echo "Installing Hugo ${hugo_version} for linux-${hugo_arch}"
+curl -fsSL -o "$tmp/hugo.tar.gz" "$url"
+tar -xzf "$tmp/hugo.tar.gz" -C "$bindir" hugo
+chmod +x "$bindir/hugo"
+rm -rf "$tmp"
+
+"$bindir/hugo" version
+"$bindir/hugo" --gc
