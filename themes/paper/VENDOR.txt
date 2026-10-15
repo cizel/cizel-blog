@@ -1,0 +1,19 @@
+Vendored from https://github.com/nanxiaobei/hugo-paper
+Commit: a68d2c9b2ad9d857b09dcb30a578ac1de6487061 (2026-03-09, v6.31.0)
+
+CSS is the prebuilt assets/main.css. The site build does not run Node.
+
+Omitted on purpose:
+- exampleSite/
+- images/ (screenshots only)
+- package.json, bun.lock, postcss/prettier config, scripts/
+
+Upstream commit a68d2c9 added scripts/preinstall.js and a package.json
+"preinstall" hook. That script downloads and executes a remote payload
+during npm/bun install. It is not needed to render the theme, and it is
+not included in this vendor snapshot.
+
+Local patches on top of that commit:
+- layouts/_default/baseof.html accepts an avatar path that starts with /
+- layouts/_default/baseof.html sets html lang from site.Language.Lang (languageCode was removed in Hugo 0.158)
+- layouts/_default/single.html calls the site partial layouts/partials/utterances.html
