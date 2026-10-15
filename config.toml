@@ -1,5 +1,5 @@
 baseURL = "https://www.cizel.cn"
-title = "和西泽一起成长"
+title = "阿臻说"
 
 theme = "hugo-theme-space"
 
@@ -16,10 +16,10 @@ pluralizelisttitles = false
 pygmentsCodeFencesGuessSyntax = true
 
 [params]
-    author = "西泽"
+    author = "阿臻"
     info = "编程 / 安全 / 写作"
-    description = "爱编程，爱破解，爱写作 - Cizel.cn"
-    keywords = "Cizel, Cizel Blog, 西泽, 一起成长, 程序员成长, 和西泽一起成长"
+    description = "爱编程，爱破解，爱写作 - 阿臻说"
+    keywords = "Cizel, 阿臻说, 阿臻, 程序员成长"
 
     avatarURL = "images/author.jpg"
     favicon_32 = "favicon-32x32.png"
