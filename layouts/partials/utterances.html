@@ -1,0 +1,20 @@
+{{- $repo := "" -}}
+{{- with site.Params.utterances.repo -}}
+  {{- $repo = . -}}
+{{- end -}}
+{{- $disabled := or (eq .Params.comments false) (eq .Params.comment false) (eq .Params.disable_comments true) -}}
+{{- if and $repo (ne $repo "") (not $disabled) (eq .Section "posts") -}}
+<div class="utterances mt-24">
+  <script
+    src="https://utteranc.es/client.js"
+    repo="{{ $repo }}"
+    issue-term="{{ site.Params.utterances.issueTerm | default "title" }}"
+    {{- with site.Params.utterances.label }}
+    label="{{ . }}"
+    {{- end }}
+    theme="{{ site.Params.utterances.theme | default "github-light" }}"
+    crossorigin="anonymous"
+    async
+  ></script>
+</div>
+{{- end -}}

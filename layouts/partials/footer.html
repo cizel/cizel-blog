@@ -1,28 +1,30 @@
-{{ if not .Site.Params.hideFooter | default false }}
-  <footer class="footer">
-    <section class="container">
-      {{ with .Site.Params.footerContent | safeHTML }}
-        <p>{{ . }}</p>
-      {{ end }}
-      {{ $beian := or .Site.Params.beian "鄂ICP备16010857号-1" }}
-      <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">{{ $beian }}</a></p>
-      {{ if not .Site.Params.hideCopyright }}
-        ©
-        {{ if (and (.Site.Params.since) (lt .Site.Params.since now.Year)) }}
-          {{ .Site.Params.since }} -
-        {{ end }}
-        {{ now.Year }}
-        {{ with .Site.Params.author }} {{ . }} {{ end }}
-      {{ end }}
-      {{ if not .Site.Params.hideCredits }}
-        {{ if not .Site.Params.hideCopyright }} · {{ end }}
-        {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      {{ end }}
-      {{ if .Site.Params.commit }}
-        {{ if .GitInfo }}
-          [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a>]
-        {{ end }}
-      {{ end }}
-    </section>
-  </footer>
-{{ end }}
+<footer
+  class="mx-auto flex max-w-(--w) items-center px-8 text-xs opacity-60"
+  style="height: auto; min-height: 4.5rem; flex-wrap: wrap; column-gap: 1.5rem; row-gap: 0.35rem; padding-top: 1.25rem; padding-bottom: 1.25rem; letter-spacing: normal; text-transform: none"
+>
+  <div class="mr-auto" style="display: flex; flex-direction: column; gap: 0.2rem; line-height: 1.7">
+    <div>
+      &copy;
+      {{- $year := now.Year -}}
+      {{- with site.Params.since -}}
+        {{- if lt . $year }} {{ . }}–{{ $year }}
+        {{- else }} {{ $year }}
+        {{- end -}}
+      {{- else }}
+        {{ $year }}
+      {{- end }}
+      <a class="link" href="{{ "" | absURL }}">{{ site.Title }}</a>
+    </div>
+    {{- with site.Params.footercontent }}
+      <div>{{ . }}</div>
+    {{- end }}
+    {{- $beian := or site.Params.beian "鄂ICP备16010857号-1" }}
+    <div>
+      <a class="link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">{{ $beian }}</a>
+    </div>
+  </div>
+  <div style="display: flex; gap: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase">
+    <a class="link" href="https://gohugo.io/" rel="noopener" target="_blank">powered by hugo</a>
+    <a class="link" href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">hugo-paper</a>
+  </div>
+</footer>

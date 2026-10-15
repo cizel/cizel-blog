@@ -1,5 +1,6 @@
 #!/bin/sh
-# Install a known Hugo and build the site. Does not clone themes.
+# Install a known Hugo Extended and build the site.
+# themes/paper ships prebuilt CSS, so this does not install Node or clone a theme.
 set -eu
 
 hugo_version=0.168.0
