@@ -9,7 +9,7 @@ keywords: ["haproxy", "学习笔记"]
 tags: ["Haproxy"]
 categories: ["开发者手册"]
 
-draft: false
+draft: true
 ---
 
 HAProxy 是一款高可用性、负载均衡已经基于 TCP（四层）和 HTTP（七层）应用的代理软件，本文主要记录 HAProxy 的详细配置。
