@@ -7,5 +7,17 @@
         "env": {
             "HUGO_VERSION": "0.168.0"
         }
-    }
+    },
+    "redirects": [
+        {
+            "source": "/post/:path(.*)",
+            "destination": "/posts/:path",
+            "statusCode": 301
+        },
+        {
+            "source": "/post",
+            "destination": "/posts",
+            "statusCode": 301
+        }
+    ]
 }
