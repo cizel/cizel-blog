@@ -17,3 +17,8 @@ Local patches on top of that commit:
 - layouts/_default/baseof.html accepts an avatar path that starts with /
 - layouts/_default/baseof.html sets html lang from site.Language.Lang (languageCode was removed in Hugo 0.158)
 - layouts/_default/single.html calls the site partial layouts/partials/utterances.html
+
+Site CSS lives in the project file assets/custom.css. Hugo resolves
+resources.Get "custom.css" (see layouts/partials/head.html) to that file,
+which shadows this theme's assets/custom.css. Edits to the theme stub do
+not ship.

@@ -1,0 +1,89 @@
+/*
+  站点自定义样式。Paper 的 layouts/partials/head.html 会把
+  resources.Get "custom.css" 接在预编译 main.css 后面；项目 assets/
+  会盖掉 themes/paper/assets/custom.css。
+
+  高亮代码在窄栏里换行，而不是横向滚动：
+  - Tailwind Typography 用 :not(#...) 把 .prose pre 设成 overflow-x: auto
+  - Hugo Chroma（默认 noClasses）把每一行包进 <span style="display:flex">，
+    flex 子项默认 min-width: auto，长行撑开后只能横滑
+*/
+
+.prose pre,
+.highlight pre {
+  overflow-x: hidden !important;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* 主题把 article code 设成 inline-block，宽度会跟着最长的一行走。 */
+.prose pre code,
+.highlight pre code {
+  display: block !important;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/*
+  保留 flex，行号和代码仍能并排。
+  只有代码那一列收缩并换行；单独的行号列不换行。
+*/
+.highlight pre code > span[style*="display:flex"],
+.highlight pre code > span[style*="display: flex"],
+.chroma .line {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.highlight pre code > span[style*="display:flex"] > span:only-child,
+.highlight pre code > span[style*="display: flex"] > span:only-child,
+.highlight pre code > span[style*="display:flex"] > span:last-child:not(:only-child),
+.highlight pre code > span[style*="display: flex"] > span:last-child:not(:only-child),
+.chroma .line > .cl {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.highlight pre code > span[style*="display:flex"] > span:first-child:not(:only-child),
+.highlight pre code > span[style*="display: flex"] > span:first-child:not(:only-child),
+.chroma .line > .ln,
+.chroma .lnt {
+  flex: 0 0 auto;
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* Paper 行号表：同一行 tr 里左列行号、右列代码。右列必须能收缩。 */
+.highlight > div table tr > td:first-child:not(:only-child) {
+  flex: 0 0 auto;
+}
+
+.highlight > div table tr > td:last-child {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/*
+  主题把 tr:first-of-type 里所有 span 设成 display:block，用来排行号。
+  行号表只有一行 tr，代码列的色块也会中招，每个 token 独占一行。
+  左列保持主题样式；右列恢复成行内代码，长行仍在这一列里换行。
+*/
+.highlight > div table tr > td:last-child:not(:first-child) pre code span {
+  display: inline !important;
+  min-width: 0 !important;
+  text-align: start;
+}
+
+.highlight > div table tr > td:last-child:not(:first-child) pre code > span[style*="display:flex"],
+.highlight > div table tr > td:last-child:not(:first-child) pre code > span[style*="display: flex"] {
+  display: flex !important;
+}
